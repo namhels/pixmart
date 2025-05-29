@@ -1,0 +1,42 @@
+.custom-radio {
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.custom-radio + label {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.custom-radio + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--elements-seporator-bold);
+  box-sizing: border-box;
+  transition: all var(--transition);
+}
+
+.custom-radio + label:focus::before {
+  border: 2px solid var(--accent-color-alt);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.custom-radio + label:hover::before {
+  border: 2px solid var(--accent-color);
+}
+
+.custom-radio:checked + label::before {
+  border: 6px solid var(--accent-color);
+  box-sizing: border-box;
+}

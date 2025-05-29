@@ -1,0 +1,38 @@
+<section class="container section hero">
+  <div class="banner">
+    {% for i in banner_photos %}
+      <picture>
+        <source srcset="{{ i.img_1x }} 1x, {{ i.img_2x }} 2x" type="image/webp"/>
+        <img class="banner__photo {{ i.class }}" src="{{ i.img_1x }}" alt="{{ i.alt }}" loading="lazy"/>
+      </picture>
+    {% endfor %}
+    {% for i in banner_icons %}
+      <div class="banner__icon-wrapper {{ i.class }}">
+        <svg class="banner__icon" width="32" height="32" aria-hidden="true">
+          <use href="{{ i.svg }}"></use>
+        </svg>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="hero__info">
+    <h1 class="title-l hero__title">
+      Craft Your Success with Our
+      <span class="hero__title--highlight">Digital</span>
+      Assets
+    </h1>
+    <p class="hero__text">
+      From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.
+    </p>
+    <div class="hero__buttons">
+      <button class="button" type="button" title="Shopping cart button" id="shop-now-btn" aria-labelledby="shop-now-btn">
+        Shop Now
+      </button>
+      <a class="button button--secondary" href="#" aria-labelledby="watch-about-us-btn" target="_blank">
+        <svg width="24" height="24" aria-hidden="true">
+          <use href="/img/sprite.svg#watch-about-us"></use>
+        </svg>
+        <span class="hero__watch-about-us" id="watch-about-us-btn">Watch About Us</span>
+      </a>
+    </div>
+  </div>
+</section>

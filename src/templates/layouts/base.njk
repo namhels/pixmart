@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>{{ title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+  </head>
+  <body>
+    {% include "partials/header/header.njk" %}
+    {% block content %}default content{% endblock %}
+    {% include "partials/footer/footer.njk" %}
+    {% include "partials/footer/footer-bottom.njk" %}
+    <script>
+      window.addEventListener("load", (event) => {
+        const burgerOpener = document.querySelector(".js-burger");
+        const filterOpener = document.querySelector(".js-filter");
+        const burger = document.querySelector(".burger");
+        const filterBurger = document.querySelector(".filter-burger");
+        const filterOpenerText = document.querySelector(".filter-opener__text");
+        burgerOpener.addEventListener("click", () => {
+          document
+            .body
+            .classList
+            .remove("filter--active");
+          document
+            .body
+            .classList
+            .toggle("side-menu--active");
+          burger.classList.toggle("is-active");
+        });
+        filterOpener.addEventListener("click", () => {
+          document
+            .body
+            .classList
+            .remove("side-menu--active");
+          document
+            .body
+            .classList
+            .toggle("filter--active");
+          filterBurger.classList.toggle("filter-active");
+          filterOpenerText.classList.toggle("visually-hidden");
+        });
+        window.addEventListener("resize", () => {
+          document
+            .body
+            .classList
+            .remove("side-menu--active");
+          document
+            .body
+            .classList
+            .remove("filter--active");
+        });
+      });
+    </script>
+    <script>
+      window.onload = function () {
+        slideOne();
+        slideTwo();
+      };
+
+      let sliderOne = document.getElementById("slider-1");
+      let sliderTwo = document.getElementById("slider-2");
+      let displayValOne = document.getElementById("range1");
+      let displayValTwo = document.getElementById("range2");
+      let minGap = 0;
+      let sliderTrack = document.querySelector(".slider-track");
+      let sliderMaxValue = document.getElementById("slider-1").max;
+
+      function slideOne() {
+        if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+          sliderOne.value = parseInt(sliderTwo.value) - minGap;
+        }
+        displayValOne.textContent = sliderOne.value;
+        fillColor();
+      }
+      function slideTwo() {
+        if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+          sliderTwo.value = parseInt(sliderOne.value) + minGap;
+        }
+        displayValTwo.textContent = sliderTwo.value;
+        fillColor();
+      }
+      function fillColor() {
+        percent1 = (sliderOne.value / sliderMaxValue) * 100;
+        percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+        sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3264fe ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+@use "../base/mixins" as *;
+
+.logo__icon {
+  width: 108px;
+  height: 24px;
+  fill: var(--accent-color);
+}
+
+.footer__logo-icon {
+  width: 300px;
+  height: 50px;
+  fill: var(--accent-color);
+}
+
+.logo:hover .logo__icon,
+.logo:focus .logo__icon,
+.logo:hover .footer__logo-icon,
+.logo:focus .footer__logo-icon {
+  outline: none;
+  animation: pulse-logo 1000ms infinite linear;
+}
+
+@keyframes pulse-logo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    fill: var(--accent-color-secondary);
+    transform: scale(1.4);
+  }
+  65% {
+    fill: var(--text-icons-elements-secondary);
+    transform: scale(1.2);
+  }
+  75% {
+    fill: var(--accent-color-secondary);
+    transform: scale(1.4);
+  }
+  85% {
+    fill: var(--accent-color-secondary);
+    transform: scale(1.2);
+  }
+  100% {
+    fill: var(--text-icons-elements-secondary);
+    transform: scale(1);
+  }
+}

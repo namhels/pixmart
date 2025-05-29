@@ -1,0 +1,141 @@
+@use "../base/mixins" as *;
+
+.footer {
+  padding-top: 32px;
+  background-color: var(--bg-base);
+
+  @include mq(tablet) {
+    padding-top: 64px;
+  }
+
+  &__top {
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include mq(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: unset;
+    }
+  }
+
+  &__logo-slogan {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include mq(tablet) {
+      max-width: 320px;
+    }
+  }
+
+  &__slogan {
+    color: var(--text-icons-elements-primary);
+    font-size: 16px;
+  }
+
+  &__navs {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include mq(tablet) {
+      flex-direction: row;
+      gap: 64px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__nav-name {
+    margin-bottom: 16px;
+  }
+
+  &__nav-link {
+    width: max-content;
+    color: var(--text-icons-elements-secondary);
+    font-size: 16px;
+    transition: color var(--transition), transform var(--transition);
+
+    &:hover {
+      color: var(--accent-color);
+      transform: scale(1.05);
+    }
+
+    &:active {
+      color: var(--accent-color-alt);
+      transform: scale(1.05);
+    }
+
+    &:focus {
+      outline: none;
+      border-radius: 5px;
+      box-shadow: 0px 0px 0px 2px var(--accent-color-alt) inset;
+      transform: scale(1.05);
+    }
+  }
+
+  &__middle {
+    padding-bottom: 64px;
+
+    @include mq(tablet) {
+      padding-bottom: 135px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__middle-text {
+    font-size: 24px;
+
+    @include mq(mobile-only) {
+      margin-bottom: 24px;
+    }
+
+    @include mq(tablet) {
+      margin-left: auto;
+      margin-right: 24px;
+    }
+  }
+
+  &__middle-tools {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__search-input {
+    width: 256px;
+    padding: 21px;
+    border-radius: 8px;
+    border: 1px solid var(--elements-seporator-bold);
+    background-color: var(--bg-base);
+    color: var(--text-icons-elements-secondary2);
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: border-color var(--transition);
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+      transition: color var(--transition);
+    }
+
+    &:hover::placeholder {
+      color: var(--accent-color);
+    }
+  }
+}

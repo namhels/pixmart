@@ -1,0 +1,294 @@
+{
+  "title": "Pixmart - catalog",
+  "path": "./catalog.html",
+
+  "filters_section": [
+    {
+      "title": "Categories",
+      "filters_list": [
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-all-categories",
+          "parameter": "All Categories",
+          "checked": "checked"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-technology",
+          "parameter": "Technology"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-travel-tourism",
+          "parameter": "Travel & Tourism"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-health-fitness",
+          "parameter": "Health & Fitness"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-e-commerce",
+          "parameter": "E-Commerce"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-education",
+          "parameter": "Education"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-entertainment",
+          "parameter": "Entertainment"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-sport",
+          "parameter": "Sport"
+        },
+        {
+          "type": "checkbox",
+          "filter_for": "filters-input-others",
+          "parameter": "Others"
+        }
+      ]
+    },
+    {
+      "title": "Format Type",
+      "filters_list": [
+        {
+          "type": "radio",
+          "filter_for": "filters-input-figma",
+          "parameter": "Figma",
+          "value": "figma",
+          "name": "format-type",
+          "checked": "checked"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-sketch",
+          "parameter": "Sketch",
+          "value": "sketch",
+          "name": "format-type"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-adobe-xd",
+          "parameter": "Adobe XD",
+          "value": "adobe-xd",
+          "name": "format-type"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-adobe-photoshop",
+          "parameter": "Adobe Photoshop",
+          "value": "adobe-photoshop",
+          "name": "format-type"
+        },
+        {
+          "type": "radio",
+          "filter_for": "filters-input-adobe-illustration",
+          "parameter": "Adobe Illustration",
+          "value": "adobe-illustration",
+          "name": "format-type"
+        }
+      ]
+    },
+    {
+      "title": "Style",
+      "filters_list": [
+        {
+          "type": "switcher",
+          "filter_for": "filters-input-minimalist",
+          "parameter": "Minimalist",
+          "name": "style",
+          "checked": "checked"
+        },
+        {
+          "type": "switcher",
+          "filter_for": "filters-input-modern",
+          "parameter": "Modern",
+          "name": "style"
+        },
+        {
+          "type": "switcher",
+          "filter_for": "filters-input-playful",
+          "parameter": "Playful",
+          "name": "style"
+        },
+        {
+          "type": "switcher",
+          "filter_for": "filters-input-dark-mode",
+          "parameter": "Dark Mode",
+          "name": "style"
+        },
+        {
+          "type": "switcher",
+          "filter_for": "filters-input-photocentric",
+          "parameter": "Photocentric",
+          "name": "style"
+        }
+      ]
+    }
+  ],
+
+  "catalog_products": [
+    {
+      "href": "#",
+      "title": "Link to our product Lens Chronicles",
+      "aria_labelledby": "product-lens-chronicles",
+      "img_1x": "/img/catalog/image1-1x.webp",
+      "img_2x": "/img/catalog/image1-2x.webp",
+      "alt": "Site Lens Chronicles",
+      "state": "sold-out",
+      "tag": "SOLD OUT",
+      "name": "Lens Chronicles",
+      "desc": "Photography · Creative",
+      "price": "€00.00"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Career Success",
+      "aria_labelledby": "product-career-success",
+      "img_1x": "/img/catalog/image2-1x.webp",
+      "img_2x": "/img/catalog/image2-2x.webp",
+      "alt": "Site Career Success",
+      "state": "new",
+      "tag": "NEW",
+      "name": "Career Success",
+      "desc": "Guidance · Jobs",
+      "price": "€20.99"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Dream Homes",
+      "aria_labelledby": "product-dream-homes",
+      "img_1x": "/img/catalog/image3-1x.webp",
+      "img_2x": "/img/catalog/image3-2x.webp",
+      "alt": "Site Dream Homes",
+      "state": "popular",
+      "tag": "POPULAR",
+      "name": "Dream Homes",
+      "desc": "Real Estate · Modern",
+      "price": "€45.99"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Foodish Catering",
+      "aria_labelledby": "product-foodish-catering",
+      "img_1x": "/img/catalog/image4-1x.webp",
+      "img_2x": "/img/catalog/image4-2x.webp",
+      "alt": "Site Foodish Catering",
+      "state": "popular",
+      "tag": "POPULAR",
+      "name": "Foodish Catering",
+      "desc": "Food · Events",
+      "price": "€15.99"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Caring Hearts",
+      "aria_labelledby": "product-caring-hearts",
+      "img_1x": "/img/catalog/image5-1x.webp",
+      "img_2x": "/img/catalog/image5-2x.webp",
+      "alt": "Site Caring Hearts",
+      "state": "new",
+      "tag": "NEW",
+      "name": "Caring Hearts",
+      "desc": "Healthcare · Support",
+      "price": "€19.99"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Gaming Rise",
+      "aria_labelledby": "product-gaming-rise",
+      "img_1x": "/img/catalog/image6-1x.webp",
+      "img_2x": "/img/catalog/image6-2x.webp",
+      "alt": "Site Gaming Rise",
+      "state": "sold-out",
+      "tag": "SOLD OUT",
+      "name": "Gaming Rise",
+      "desc": "eSports · Trends",
+      "price": "€00.00"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Edit Pro",
+      "aria_labelledby": "product-edit-pro",
+      "img_1x": "/img/catalog/image7-1x.webp",
+      "img_2x": "/img/catalog/image7-2x.webp",
+      "alt": "Site Edit Pro",
+      "state": "sold-out",
+      "tag": "SOLD OUT",
+      "name": "Edit Pro",
+      "desc": "Design · Tools",
+      "price": "€00.00"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Banking Redefined",
+      "aria_labelledby": "product-banking-redefined",
+      "img_1x": "/img/catalog/image8-1x.webp",
+      "img_2x": "/img/catalog/image8-2x.webp",
+      "alt": "Site Banking Redefined",
+      "state": "new",
+      "tag": "NEW",
+      "name": "Banking Redefined",
+      "desc": "Finance · Secure",
+      "price": "€25.99"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Exploring Fun",
+      "aria_labelledby": "product-exploring-fun",
+      "img_1x": "/img/catalog/image9-1x.webp",
+      "img_2x": "/img/catalog/image9-2x.webp",
+      "alt": "Site Exploring Fun",
+      "state": "popular",
+      "tag": "POPULAR",
+      "name": "Exploring Fun",
+      "desc": "Travel · Adventure",
+      "price": "€41.99"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Admin Dashboard",
+      "aria_labelledby": "product-admin-dashboard",
+      "img_1x": "/img/catalog/image10-1x.webp",
+      "img_2x": "/img/catalog/image10-2x.webp",
+      "alt": "Site Admin Dashboard",
+      "state": "popular",
+      "tag": "POPULAR",
+      "name": "Admin Dashboard",
+      "desc": "Data · Tools",
+      "price": "€15.99"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Kindergarten",
+      "aria_labelledby": "product-kindergarten",
+      "img_1x": "/img/catalog/image12-1x.webp",
+      "img_2x": "/img/catalog/image12-2x.webp",
+      "alt": "Site Kindergarten",
+      "state": "sold-out",
+      "tag": "SOLD OUT",
+      "name": "Kindergarten",
+      "desc": "Education · Kids",
+      "price": "€00.00"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Analytical Dashboard",
+      "aria_labelledby": "product-analytical-dashboard",
+      "img_1x": "/img/catalog/image11-1x.webp",
+      "img_2x": "/img/catalog/image11-2x.webp",
+      "alt": "Site Analytical Dashboard",
+      "state": "new",
+      "tag": "NEW",
+      "name": "Analytical Dashboard",
+      "desc": "Data · Tools",
+      "price": "€10.99"
+    }
+  ]
+}

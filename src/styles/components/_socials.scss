@@ -1,0 +1,30 @@
+@use "../base/mixins" as *;
+
+.socials {
+  display: flex;
+  gap: 8px;
+
+  @include mq(mobile-only) {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-icons-elements-primary);
+    border-radius: 8px;
+    border: 2px solid var(--elements-seporator-bold);
+    transition: transform var(--transition), border-color var(--transition), color var(--transition);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    transform: scale(1.1);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    outline: none;
+  }
+}

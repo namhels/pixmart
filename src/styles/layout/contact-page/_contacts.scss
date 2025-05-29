@@ -1,0 +1,195 @@
+@use "../base/mixins" as *;
+
+.contacts {
+  padding-top: 64px;
+  background: linear-gradient(180deg, #F0F6FD 0.2%, rgba(255, 255, 255, 0.00) 99.8%);
+
+  @include mq(mobile-only) {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  @include mq(tablet) {
+    gap: 40px;
+    align-items: end;
+  }
+}
+
+.contacts-info {
+  width: 100%;
+
+  &__hero {
+    margin-bottom: 32px;
+  }
+
+  &__hero-tag {
+    margin-bottom: 16px;
+  }
+
+  &__hero-title {
+    margin-bottom: 16px;
+  }
+
+  &__hero-text {
+    margin-bottom: 32px;
+  }
+
+  &__data {
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__data-item {
+    display: flex;
+    gap: 8px;
+    width: max-content;
+  }
+
+  &__data-link {
+    color: var(--text-icons-elements-primary);
+    font-weight: 600;
+  }
+
+  &__map {
+    position: relative;
+    border-radius: 20px;
+    background-color: var(--text-icons-elements-secondary-invert);
+    overflow: hidden;
+  }
+
+  &__map-element {
+    width: 100%;
+    height: 314px;
+  }
+
+  &__location {
+    position: absolute;
+    bottom: 26px;
+    right: 56px;
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 10px;
+    background-color: var(--bg-base);
+    box-shadow: var(--box-shadow);
+  }
+
+  &__location-title {
+    color: var(--text-icons-elements-primary);
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__location-text {
+    font-size: 16px;
+  }
+}
+
+.contacts-form-section {
+  width: 100%;
+}
+
+.contacts-form {
+  padding: 32px;
+  border-radius: 20px;
+  background: var(--bg-base);
+  box-shadow: var(--box-shadow);
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    color: var(--text-icons-elements-primary);
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  &__input,
+  &__select {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--elements-seporator-bold);
+    background-color: var(--bg-base);
+    transition: border var(--transition);
+
+    color: var(--text-icons-elements-secondary2);
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &__input:hover,
+  &__select:hover {
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+  }
+
+  &__input:focus,
+  &__select:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+  }
+
+  &__select {
+    flex-grow: 2;
+    color: var(--text-icons-elements-primary);
+
+    background: transparent url(/img/chevron-down.svg) no-repeat right 15px center;
+    background-size: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  &__item--textarea {
+    margin-bottom: 24px;
+  }
+
+  &__textarea {
+    resize: none;
+  }
+
+  &__tools {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include mq(desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__checkbox,
+  &__link {
+    color: var(--text-icons-elements-primary);
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  &__checkbox:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.contacts-form input:not([type="checkbox"]):valid:not(:placeholder-shown),
+.contacst-form textarea:valid:not(:placeholder-shown) {
+  border-color: var(--accent-color-secondary);
+}
+
+.contacts-form input:not([type="checkbox"]):invalid:not(:placeholder-shown),
+.contacts-form textarea:invalid:not(:placeholder-shown) {
+  border-color: var(--warning-color);
+}

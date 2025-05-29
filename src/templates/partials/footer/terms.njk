@@ -1,0 +1,8 @@
+<ul class="terms">
+  {% for i in terms %}
+    <li class="terms__item">
+      <a class="terms__link" href="{{ i.href }}" title="{{ i.title }}" target="_blank" id="{{ i.aria_labelledby }}" aria-labelledby="{{ i.aria_labelledby }}">{{ i.text }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

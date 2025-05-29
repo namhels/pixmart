@@ -1,0 +1,188 @@
+@use "../base/mixins" as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  padding-block: 32px 64px;
+  background: linear-gradient(90deg, #F0F6FD 44%, #FFF 100%);
+  overflow: hidden;
+
+  @include mq(tablet) {
+    flex-direction: row;
+    padding-block: 120px;
+    gap: 52px;
+  }
+
+  @include mq(desktop) {
+    gap: 176px;
+  }
+
+  &__info {
+    @include mq(tablet) {
+      width: 410px;
+    }
+
+    @include mq(desktop) {
+      width: 520px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__title--highlight {
+    color: var(--accent-color);
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.banner {
+  min-width: 408px;
+  min-height: 276px;
+  position: relative;
+  overflow: hidden;
+
+  @include mq(tablet) {
+    min-width: 444px;
+    min-height: 387px;
+    order: 1;
+  }
+
+  @include mq(desktop) {
+    min-width: 624px;
+    min-height: 544px;
+  }
+
+  &__photo {
+    position: absolute;
+    transition: transform var(--transition-alt);
+  }
+
+  &__photo:hover {
+    transform: scale(1.1);
+    z-index: 5;
+  }
+
+  &__photo1 {
+    min-width: 131px;
+    min-height: 197px;
+    left: 0;
+    top: 29px;
+    z-index: 2;
+    border-radius: 6px;
+    background-color: var(--bg-base);
+
+    @include mq(tablet) {
+      min-width: 200px;
+      min-height: 300px;
+      top: 0;
+      left: -50px;
+      border-radius: 10px;
+    }
+
+    @include mq(desktop) {
+      min-width: 281px;
+      min-height: 422px;
+      left: 0;
+    }
+  }
+
+  &__photo2 {
+    min-width: 171px;
+    min-height: 96px;
+    top: 13px;
+    right: 60px;
+    border: 3px solid var(--bg-base);
+    border-radius: 6px;
+    background: lightgray 50% / cover no-repeat;
+
+    @include mq(tablet) {
+      min-width: 207px;
+      min-height: 117px;
+      top: 35px;
+      right: 16px;
+      border-width: 5px;
+      border-radius: 10px;
+    }
+
+    @include mq(desktop) {
+      min-width: 291px;
+      min-height: 164px;
+      top: 49px;
+    }
+  }
+
+  &__photo3 {
+    min-width: 242px;
+    min-height: 140px;
+    bottom: 14px;
+    right: 60px;
+    background: lightgray 50% / cover no-repeat;
+
+    @include mq(tablet) {
+      min-width: 366px;
+      min-height: 213px;
+      bottom: 0;
+      right: -16px;
+    }
+
+    @include mq(desktop) {
+      min-width: 514px;
+      min-height: 299px;
+    }
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background: var(--bg-base);
+    box-shadow: 0px 2px 24px 0px rgba(29, 57, 95, 0.08);
+    z-index: 4;
+
+    @include mq(tablet) {
+    width: 56px;
+    height: 56px;
+    }
+  }
+
+  &__icon-wrapper1 {
+    position: absolute;
+    left: 19px;
+    bottom: 5px;
+
+    @include mq(tablet) {
+    left: 30px;
+    bottom: 42px;
+    }
+  }
+
+  &__icon-wrapper2 {
+    position: absolute;
+    top: 6px;
+    right: 68px;
+
+    @include mq(tablet) {
+    top: 9px;
+    right: 74px;
+    }
+  }
+}

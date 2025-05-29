@@ -1,0 +1,24 @@
+<section class="container section categories">
+  <div class="categories__info">
+    <h3 class="title-tag categories__tag">categories</h3>
+    <h2 class="title categories__title">Discover Assets for Every Projects</h2>
+    <p class="categories__info-text">
+      From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need
+      to your projects.
+    </p>
+    <button class="button" type="button" title="Shopping cart button" id="categories-shop-now-btn" aria-labelledby="categories-shop-now-btn">
+      Shop Now
+    </button>
+  </div>
+  <ul class="categories__list">
+    {% for i in categories %}
+      <li class="categories__item {{ i.grid_class }} {% if i.empty === true %}categories__item-empty{% endif %}">
+        <svg class="categories__icon" width="48" height="48" aria-hidden="true">
+          <use href="{{ i.svg }}"></use>
+        </svg>
+        <h4 class="title-s categories__heading">{{ i.heading }}</h4>
+        <p class="categories__text">{{ i.text }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

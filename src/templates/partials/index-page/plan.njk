@@ -1,0 +1,37 @@
+<section class="container plan">
+  <div class="plan__info">
+    <h3 class="title-tag">pricing plan</h3>
+    <h2 class="title plan__title">Choose The Perfect Plan for Creative Potential</h2>
+  </div>
+  <ul class="plan__list">
+    {% for i in plan_list %}
+      <li class="plan__item">
+        <h4 class="title-xs plan__name">{{ i.name }}</h4>
+        <p class="plan__price">
+          <span class="title plan__price-number">{{ i.price_number }}</span>
+          <span class="plan__price-text">{{ i.price_text }}</span>
+        </p>
+        <ul class="plan__condition-list">
+          {% for e in i.plan_conditions %}
+            <li class="plan__condition-item">
+              <svg width="16" height="12" aria-hidden="true">
+                <use href="/img/sprite.svg#check-mark"></use>
+              </svg>
+              <p class="plan__condition-text">{{ e.condition_text }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+        <a
+          class="button plan__button"
+          href="#"
+          title="Link to {{ i.name }}"
+          target="_blank"
+          id="plan-subscribe-btn"
+          aria-labelledby="plan-subscribe-btn">
+          Subscribe
+        </a>
+        <div class="title-xs plan__item-tag">best seller</div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

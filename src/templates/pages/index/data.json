@@ -1,0 +1,271 @@
+{
+  "title": "Pixmart",
+  "path": "./index.html",
+
+  "banner_photos": [
+    {
+      "class": "banner__photo1",
+      "img_1x": "/img/hero/hero-photo1-1x.webp",
+      "img_2x": "/img/hero/hero-photo1-2x.webp",
+      "alt": "Website on laptop screen"
+    },
+    {
+      "class": "banner__photo2",
+      "img_1x": "/img/hero/hero-photo2-1x.webp",
+      "img_2x": "/img/hero/hero-photo2-2x.webp",
+      "alt": "Grid site gallery"
+    },
+    {
+      "class": "banner__photo3",
+      "img_1x": "/img/hero/hero-photo3-1x.webp",
+      "img_2x": "/img/hero/hero-photo3-2x.webp",
+      "alt": "Website banner gallery"
+    }
+  ],
+
+  "banner_icons": [
+    {
+      "class": "banner__icon-wrapper1",
+      "svg": "img/sprite.svg#hero-icon1"
+    },
+    {
+      "class": "banner__icon-wrapper2",
+      "svg": "img/sprite.svg#hero-icon2"
+    }
+  ],
+
+  "features": [
+    {
+      "title": "UI Kits",
+      "svg": "img/sprite.svg#ui-kit"
+    },
+    {
+      "title": "Social Media",
+      "svg": "img/sprite.svg#social-media"
+    },
+    {
+      "title": "Presentation",
+      "svg": "img/sprite.svg#presentation"
+    },
+    {
+      "title": "Fonts",
+      "svg": "img/sprite.svg#font"
+    },
+    {
+      "title": "Illustrations",
+      "svg": "img/sprite.svg#illustration"
+    }
+  ],
+
+  "categories": [
+    {
+      "svg": "img/sprite.svg#ui-kit",
+      "grid_class": "i1",
+      "heading": "Templates",
+      "text": "For all needs • Modern"
+    },
+    {
+      "grid_class": "i2",
+      "empty": "true"
+    },
+    {
+      "svg": "img/sprite.svg#social-media",
+      "grid_class": "i3",
+      "heading": "App Icons",
+      "text": "High-quality • Elegant"
+    },
+    {
+      "svg": "img/sprite.svg#presentation",
+      "grid_class": "i4",
+      "heading": "Slides",
+      "text": "Pitch-ready • Creative"
+    },
+    {
+      "svg": "img/sprite.svg#illustration",
+      "grid_class": "i5",
+      "heading": "Design Tools",
+      "text": "Easy to use • Unique"
+    },
+    {
+      "grid_class": "i6",
+      "empty": "true"
+    }
+  ],
+
+  "products_buttons_icon": [
+    {
+      "aria_labelledby": "prev-items",
+      "text": "Previous items",
+      "svg": "/img/sprite.svg#chevron-left"
+    },
+    {
+      "aria_labelledby": "next-items",
+      "text": "Next items",
+      "svg": "/img/sprite.svg#chevron-right"
+    }
+  ],
+
+  "products": [
+    {
+      "href": "#",
+      "title": "Link to our product Travel Hero",
+      "aria_labelledby": "product-travel-hero",
+      "img_1x": "/img/products/travel-hero-1x.webp",
+      "img_2x": "/img/products/travel-hero-2x.webp",
+      "alt": "Travel Hero site",
+      "svg": "/img/sprite.svg#trophy",
+      "name": "Travel Hero",
+      "price": "€29.99",
+      "text": "Adventure • Journey"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Healthcare Pro",
+      "aria_labelledby": "product-healthcare-pro",
+      "img_1x": "/img/products/healthcare-pro-1x.webp",
+      "img_2x": "/img/products/healthcare-pro-2x.webp",
+      "alt": "Healthcare Pro site",
+      "svg": "/img/sprite.svg#trophy",
+      "name": "Healthcare Pro",
+      "price": "€15.99",
+      "text": "Medical • Wellness"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Foodish Delight",
+      "aria_labelledby": "product-foodish-delight",
+      "img_1x": "/img/products/foodish-delight-1x.webp",
+      "img_2x": "/img/products/foodish-delight-2x.webp",
+      "alt": "Foodish Delight site",
+      "name": "Foodish Delight",
+      "price": "€31.99",
+      "text": "Catering • Food"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Real Estate",
+      "aria_labelledby": "product-real-estate",
+      "img_1x": "/img/products/real-estate-1x.webp",
+      "img_2x": "/img/products/real-estate-2x.webp",
+      "alt": "Real Estate site",
+      "name": "Real Estate",
+      "price": "€40.99",
+      "text": "Modern • Homes"
+    }
+  ],
+
+  "plan_list": [
+    {
+      "name": "Standard Membership",
+      "price_number": "€14.99",
+      "price_text": "/ Month",
+      "plan_conditions": [
+        {
+          "condition_text": "Enhanced Resource Access"
+        },
+        {
+          "condition_text": "Monthly Credits"
+        },
+        {
+          "condition_text": "Priority Customer Support"
+        },
+        {
+          "condition_text": "Community Features Access"
+        }
+      ]
+    },
+    {
+      "name": "Plus Membership",
+      "price_number": "€29.99",
+      "price_text": "/ Month",
+      "plan_conditions": [
+        {
+          "condition_text": "All Standard Benefits"
+        },
+        {
+          "condition_text": "Increased Monthly Credits"
+        },
+        {
+          "condition_text": "Early Access to New Releases"
+        },
+        {
+          "condition_text": "Member-Only Offers"
+        }
+      ]
+    },
+    {
+      "name": "Pro Membership",
+      "price_number": "€49.99",
+      "price_text": "/ Month",
+      "plan_conditions": [
+        {
+          "condition_text": "All Plus Benefits"
+        },
+        {
+          "condition_text": "Unlimited Downloads"
+        },
+        {
+          "condition_text": "Custom Licensing"
+        },
+        {
+          "condition_text": "Direct Creator Collaboration"
+        }
+      ]
+    }
+  ],
+
+  "faq": [
+    {
+      "aria_labelledby": "faq-request",
+      "faq_question": "Can I request a refund?",
+      "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    },
+    {
+      "aria_labelledby": "faq-access",
+      "faq_question": "How do I access my purchased products?",
+      "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    },
+    {
+      "aria_labelledby": "faq-discounts",
+      "faq_question": "Are there any discounts for bulk purchases?",
+      "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    },
+    {
+      "aria_labelledby": "faq-payment",
+      "faq_question": "What payment methods do you accept here?",
+      "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    },
+    {
+      "aria_labelledby": "faq-sell",
+      "faq_question": "Can I sell my digital products on this marketplace?",
+      "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    }
+  ],
+
+  "articles": [
+    {
+      "href": "#",
+      "title": "Link to article Creative Blog",
+      "aria_labelledby": "creative-blog-link",
+      "img_mobile_1x": "/img/articles/binabox-mobile-1x.webp",
+      "img_mobile_2x": "/img/articles/binabox-mobile-2x.webp",
+      "img_1x": "/img/articles/binabox-1x.webp",
+      "img_2x": "/img/articles/binabox-2x.webp",
+      "alt": "Creative Blog site",
+      "name": "Creative Blog",
+      "date": "15 APRIL 2025"
+    },
+    {
+      "href": "#",
+      "title": "Link to article Best Dishes",
+      "aria_labelledby": "best-dishes-link",
+      "img_mobile_1x": "/img/articles/dishes-mobile-1x.webp",
+      "img_mobile_2x": "/img/articles/dishes-mobile-2x.webp",
+      "img_1x": "/img/articles/dishes-1x.webp",
+      "img_2x": "/img/articles/dishes-2x.webp",
+      "alt": "Best Dishes site",
+      "name": "Best Dishes",
+      "date": "5 MAY 2025"
+    }
+  ]
+}
