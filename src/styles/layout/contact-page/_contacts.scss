@@ -112,35 +112,6 @@
     line-height: 1.4;
   }
 
-  &__input,
-  &__select {
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid var(--elements-seporator-bold);
-    background-color: var(--bg-base);
-    transition: border var(--transition);
-
-    color: var(--text-icons-elements-secondary2);
-    font-family: var(--font-base);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-
-  &__input:hover,
-  &__select:hover {
-    border: 1px solid var(--accent-color);
-    cursor: pointer;
-  }
-
-  &__input:focus,
-  &__select:focus {
-    outline: none;
-    border: 1px solid var(--accent-color);
-    cursor: pointer;
-  }
-
   &__select {
     flex-grow: 2;
     color: var(--text-icons-elements-primary);
@@ -184,12 +155,43 @@
   }
 }
 
+.input,
+.contacts-form__select {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--elements-seporator-bold);
+    background-color: var(--bg-base);
+    transition: border var(--transition);
+
+    color: var(--text-icons-elements-secondary2);
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+.input:hover,
+.contacts-form__select:hover {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+
+.input:focus,
+.contacts-form__select:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+
 .contacts-form input:not([type="checkbox"]):valid:not(:placeholder-shown),
+.footer__form-tools input:valid:not(:placeholder-shown),
 .contacst-form textarea:valid:not(:placeholder-shown) {
   border-color: var(--accent-color-secondary);
 }
 
 .contacts-form input:not([type="checkbox"]):invalid:not(:placeholder-shown),
+.footer__form-tools input:invalid:not(:placeholder-shown),
 .contacts-form textarea:invalid:not(:placeholder-shown) {
   border-color: var(--warning-color);
 }

@@ -21,35 +21,33 @@
     <ul class="products__list">
       {% for i in products %}
         <li class="products__item">
-          <a class="products__link" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-labelledby="{{ i.aria_labelledby }}">
-            <article class="product">
-              <div class="product__img-wrapper">
-                <picture>
-                  <source srcset="{{ i.img_1x }} 1x, {{ i.img_2x }} 2x" type="image/webp"/>
-                  <img class="product__img" src="{{ i.img_1x }}" alt="{{ i.alt }}" loading="lazy"/>
-                </picture>
-                {% if i.svg %}
-                  <div class="product__svg-wrapper">
-                    <svg width="24" height="24" aria-hidden="true">
-                      <use class="button-icon__icon" href="{{ i.svg }}"></use>
-                    </svg>
-                  </div>
-                {% endif %}
-                <div class="product__overlay">
-                  <a class="button product__overlay-button" href="{{ i.href }}" title="{{ i.title }}" target="_blank" id="go-to-product-btn" aria-labelledby="go-to-product-btn">
-                    Go to product
-                  </a>
+          <article class="product">
+            <div class="product__img-wrapper">
+              <picture>
+                <source srcset="{{ i.img_1x }} 1x, {{ i.img_2x }} 2x" type="image/webp">
+                <img class="product__img" src="{{ i.img_1x }}" alt="{{ i.alt }}" loading="lazy">
+              </picture>
+              {% if i.svg %}
+                <div class="product__svg-wrapper">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use href="{{ i.svg }}"></use>
+                  </svg>
                 </div>
+              {% endif %}
+              <div class="product__overlay">
+                <a class="button product__overlay-button" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-label="{{ i.title }}">
+                  Go to product
+                </a>
               </div>
-              <div class="product__info">
-                <h4 class="title-s product__title" id="{{ i.aria_labelledby }}">
-                  {{ i.name }}
-                </h4>
-                <p class="product__price">{{ i.price }}</p>
-              </div>
-              <p class="product__text">{{ i.text }}</p>
-            </article>
-          </a>
+            </div>
+            <div class="product__info">
+              <h4 class="title-s product__title">
+                {{ i.name }}
+              </h4>
+              <p class="product__price">{{ i.price }}</p>
+            </div>
+            <p class="product__text">{{ i.text }}</p>
+          </article>
         </li>
       {% endfor %}
     </ul>

@@ -1,4 +1,5 @@
 <section class="catalog">
+  <h2 class="visually-hidden">catalog</h2>
   <section class="catalog__header">
     <div class="catalog__filter-tools">
       <div class="catalog__filter">
@@ -11,36 +12,37 @@
         </select>
         <div class="filter-opener">
           <h3 class="filter-opener__text visually-hidden">Filters</h3>
-          <button
-            class="button-icon js-filter"
-            type="button"
-            title="Filter menu for Catalog page"
-            aria-label="Filter menu for Catalog page">
-            <div class="filter-burger">
-              <span class="filter-burger-line"></span>
-              <span class="filter-burger-line"></span>
-              <span class="filter-burger-line"></span>
-            </div>
-          </button>
+          <div
+            class="button-icon js-filter">
+            <button
+              class="filter-burger"
+              type="button"
+              title="Filter menu for Catalog page"
+              aria-label="Filter menu for Catalog page">
+                <span class="filter-burger-line"></span>
+                <span class="filter-burger-line"></span>
+                <span class="filter-burger-line"></span>
+            </button>
+          </div>
         </div>
       </div>
       <div class="catalog__tools">
         <p class="catalog__tools-text">Showing 12 out of 120 results.</p>
         <div class="catalog__tools-buttons">
-          <button class="button-icon" type="button" title="Catalog in table form" aria-label="Catalog in table form">
+          <a class="button-icon" href="#" title="Catalog in table form" aria-label="Catalog in table form">
             <svg width="24" height="24" aria-hidden="true">
               <use href="img/sprite.svg#grid"></use>
             </svg>
-          </button>
-          <button
+          </a>
+          <a
             class="button-icon button-icon--secondary"
-            type="button"
+            href="#"
             title="Catalog in list form"
             aria-label="Catalog in list form">
             <svg width="24" height="24" aria-hidden="true">
               <use href="img/sprite.svg#list"></use>
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -48,8 +50,8 @@
       <button
         class="button-icon button-icon--secondary catalog__tags-button"
         type="button"
-        title="Close tag"
-        aria-label="Close tag">
+        title="UI Kit tag"
+        aria-label="UI Kit tag">
         UI Kit
         <svg width="24" height="24" aria-hidden="true">
           <use href="img/sprite.svg#x-close"></use>
@@ -58,8 +60,8 @@
       <button
         class="button-icon button-icon--secondary catalog__tags-button"
         type="button"
-        title="Close tag"
-        aria-label="Close tag">
+        title="UE Kit tag"
+        aria-label="UE Kit tag">
         UE Kit
         <svg width="24" height="24" aria-hidden="true">
           <use href="img/sprite.svg#x-close"></use>
@@ -70,49 +72,48 @@
   <ul class="catalog__products">
     {% for i in catalog_products %}
       <li class="holographic-card catalog__item{% if i.state === "sold-out" %} catalog__item--sold-out{% endif %}">
-        <a class="catalog__link" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-labelledby="{{ i.aria_labelledby }}">
-          <article class="catalog__product">
-            <div class="catalog__img-wrapper">
+        <article class="card">
+          <a class="card__link" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-labelledby="{{ i.aria_labelledby }}">
+            <div class="card__img-wrapper">
               <picture>
-                <source srcset="{{ i.img_1x }} 1x, {{ i.img_2x }} 2x" type="image/webp"/>
-                <img class="catalog__img" src="{{ i.img_1x }}" alt="{{ i.alt }}" loading="lazy"/>
+                <source srcset="{{ i.img_1x }} 1x, {{ i.img_2x }} 2x" type="image/webp">
+                <img class="card__img" src="{{ i.img_1x }}" alt="{{ i.alt }}" loading="lazy">
               </picture>
-              <span class="catalog__img-tag{% if i.state === "sold-out" %} catalog__img-tag--sold-out{% endif %}{% if i.state === "new" %} catalog__img-tag--new{% endif %}">{{ i.tag }}</span>
+              <span class="card__img-tag{% if i.state === "sold-out" %} card__img-tag--sold-out{% endif %}{% if i.state === "new" %} card__img-tag--new{% endif %}">{{ i.tag }}</span>
             </div>
-            <h3 class="title-xs catalog__name" id="{{ i.aria_labelledby }}">
+            <h3 class="title-xs card__name" id="{{ i.aria_labelledby }}">
               {{ i.name }}
             </h3>
-            <p class="catalog__desc">{{ i.desc }}</p>
-            <div class="catalog__product-tools">
-              <p class="title-xs catalog__price">{{ i.price }}</p>
-              <div class="catalog__product-buttons{% if i.state === "sold-out" %} visually-hidden{% endif %}">
-                <button
-                  class="button-icon  button-icon--secondary"
-                  type="button"
-                  title="Favorite product"
-                  aria-label="Favorite product">
-                  <svg width="24" height="24" aria-hidden="true">
-                    <use href="img/sprite.svg#heart1"></use>
-                  </svg>
-                </button>
-                <button class="button-icon" type="button" title="Shopping cart" aria-label="Shopping cart">
-                  <svg width="24" height="24" aria-hidden="true">
-                    <use href="img/sprite.svg#shopping-bag-02"></use>
-                  </svg>
-                </button>
-              </div>
+            <p class="card__desc">{{ i.desc }}</p>
+          </a>
+          <div class="card__product-tools">
+            <p class="title-xs card__price">{{ i.price }}</p>
+            <div class="card__product-buttons{% if i.state === "sold-out" %} visually-hidden{% endif %}">
+              <button
+                class="button-icon  button-icon--secondary"
+                type="button"
+                title="Favorite product"
+                aria-label="Favorite product">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="img/sprite.svg#heart1"></use>
+                </svg>
+              </button>
+              <button class="button-icon" type="button" title="Shopping cart" aria-label="Shopping cart">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="img/sprite.svg#shopping-bag-02"></use>
+                </svg>
+              </button>
             </div>
-          </article>
-        </a>
+          </div>
+        </article>
       </li>
     {% endfor %}
   </ul>
-  <button
+  <a
     class="button  button--secondary catalog__load-more-button"
-    type="button"
+    href="#"
     title="Load more button"
     aria-label="Load more button">
     Load more
-  </button>
-  <div class="catalog__gradient"></div>
+  </a>
 </section>

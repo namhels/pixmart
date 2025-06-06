@@ -15,7 +15,7 @@
 
   &:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 4px var(--accent-color-alt) inset;
+    box-shadow: 0 0 0 4px var(--accent-color-alt) inset;
   }
 
   &:active {
@@ -31,13 +31,13 @@
   &:hover,
   &:active {
     background-color: var(--elements-seporator);
-    box-shadow: 0px 0px 0px 2px var(--elements-seporator) inset;
+    box-shadow: 0 0 0 2px var(--elements-seporator) inset;
   }
 
   &:focus {
     outline: none;
     background-color: var(--elements-seporator);
-    box-shadow: 0px 0px 0px 4px var(--accent-color-alt) inset;
+    box-shadow: 0 0 0 4px var(--accent-color-alt) inset;
   }
 }
 
@@ -70,7 +70,7 @@
 
   &:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 4px var(--accent-color-alt) inset;
+    box-shadow: 0 0 0 4px var(--accent-color-alt) inset;
   }
 
   &:active {
@@ -85,12 +85,20 @@
   &:hover,
   &:active {
     background-color: var(--elements-seporator);
-    box-shadow: 0px 0px 0px 2px var(--elements-seporator) inset;
+    box-shadow: 0 0 0 2px var(--elements-seporator) inset;
   }
 
   &:focus {
     outline: none;
     background-color: var(--elements-seporator);
-    box-shadow: 0px 0px 0px 4px var(--accent-color-alt) inset;
+    box-shadow: 0 0 0 4px var(--accent-color-alt) inset;
   }
+}
+
+.button--tertiary {
+  border: 2px solid var(--elements-seporator-bold);
+}
+
+.button--full-width {
+  width: calc(100% - 64px);
 }

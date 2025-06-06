@@ -40,6 +40,20 @@ button {
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: -0.5px;
+
+
+  &--hero {
+    color: var(--text-icons-elements-primary);
+
+    @include mq(tablet) {
+      font-size: 52px;
+      line-height: 1.2;
+    }
+  }
+
+  &--highlight {
+    color: var(--accent-color);
+  }
 }
 
 .title-s {
@@ -68,7 +82,7 @@ button {
 
 .section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 64px;
 
   @include mq(tablet) {
@@ -154,6 +168,7 @@ button {
 }
 
 .holographic-card:hover {
+  z-index: 2;
   transform: scale(1.02);
   box-shadow: 0 0 20px rgba(0,255,255,0.5);
 }

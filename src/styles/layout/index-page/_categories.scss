@@ -1,4 +1,4 @@
-@use "../base/mixins" as *;
+@use "../../base/mixins" as *;
 
 .categories {
   display: flex;
@@ -41,13 +41,13 @@
     gap: 20px;
     grid-auto-flow: row;
     grid-template-areas:
-      "i1 i2"
-      "i1 i3"
-      "i1 i3"
-      "i4 i3"
-      "i4 i5"
-      "i4 i5"
-      "i6 i5";
+    "i1 ."
+    "i1 i2"
+    "i1 i2"
+    "i3 i2"
+    "i3 i4"
+    "i3 i4"
+    ". i4";
 
     @include mq(tablet) {
       grid-template-columns: repeat(2, 210px);
@@ -60,15 +60,42 @@
 
   .i1 { grid-area: i1; }
 
-  .i2 { grid-area: i2; }
+  .i2 {
+    grid-area: i2;
+    position: relative;
+  }
 
-  .i3 { grid-area: i3; }
+  .i3 {
+    grid-area: i3;
+    position: relative;
+  }
 
   .i4 { grid-area: i4; }
 
-  .i5 { grid-area: i5; }
 
-  .i6 { grid-area: i6; }
+  .i2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -70px;
+    height: 50px;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(0deg, var(--gradient) 0.2%, rgba(255, 255, 255, 0.00) 99.8%);
+    pointer-events: none;
+  }
+
+  .i3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -70px;
+    height: 50px;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(to bottom, var(--gradient) 0%, rgba(255, 255, 255, 0.00) 189.17%);
+    pointer-events: none;
+  }
 
   &__item {
     display: flex;
@@ -83,50 +110,6 @@
 
   &__item:hover {
     background-color: var(--accent-color);
-  }
-
-  .i2 {
-    height: 60px;
-    border-radius: 0px 0px 20px 20px;
-    background: linear-gradient(0deg, var(--gradient) 0.2%, rgba(255, 255, 255, 0.00) 99.8%);
-    padding: 0;
-    position: relative;
-  }
-
-  .i2::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    border-radius: 0px 0px 20px 20px;
-    background: linear-gradient(0deg, var(--accent-color) 0.2%, rgba(255, 255, 255, 0.00) 99.8%);
-    transition: opacity var(--transition);
-  }
-
-  .i2:hover::before {
-    opacity: 1;
-  }
-
-  .i6 {
-    height: 60px;
-    border-radius: 20px 20px 0px 0px;
-    background: linear-gradient(to bottom, var(--gradient) 0%, rgba(255, 255, 255, 0.00) 189.17%);
-    padding: 0;
-    position: relative;
-  }
-
-  .i6::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    border-radius: 20px 20px 0px 0px;
-    background: linear-gradient(to bottom, var(--accent-color) 0%, rgba(255, 255, 255, 0.00) 189.17%);
-    transition: opacity var(--transition);
-  }
-
-  .i6:hover::before {
-    opacity: 1;
   }
 
   &__icon {

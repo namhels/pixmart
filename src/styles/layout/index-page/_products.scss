@@ -1,4 +1,4 @@
-@use "../base/mixins" as *;
+@use "../../base/mixins" as *;
 
 .products {
   flex-direction: column;
@@ -24,12 +24,12 @@
   }
 
   &__buttons-icon {
+    display: flex;
+    gap: 12px;
+
     @include mq(mobile-only) {
       @include visually-hidden
     }
-
-    display: flex;
-    gap: 12px;
   }
 
   &__list-wrapper {
@@ -105,7 +105,7 @@
     justify-content: center;
     align-items: center;
     padding: 16px;
-    border-radius: 0px 20px;
+    border-radius: 0 20px;
     background-color: var(--accent-color);
   }
 

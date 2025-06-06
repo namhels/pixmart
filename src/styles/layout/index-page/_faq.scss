@@ -1,4 +1,4 @@
-@use "../base/mixins" as *;
+@use "../../base/mixins" as *;
 
 .faq {
   flex-direction: column;
@@ -50,7 +50,7 @@
     padding: 24px;
     border-radius: 10px;
     background: var(--bg-base);
-    box-shadow: 0px 4px 40px 0px rgba(29, 57, 95, 0.08);
+    box-shadow: 0 4px 40px 0 rgba(29, 57, 95, 0.08);
   }
 
   &__item:hover .faq__question {

@@ -198,5 +198,36 @@
       "aria_labelledby": "site-map-link",
       "text": "Site Map"
     }
+  ],
+
+  "articles": [
+    {
+      "href": "#",
+      "title": "Link to article Creative Blog",
+      "aria_labelledby": "creative-blog-link",
+      "img_desktop_1x": "/img/articles/desktop/binabox-1x.webp",
+      "img_desktop_2x": "/img/articles/desktop/binabox-2x.webp",
+      "img_tablet_1x": "/img/articles/tablet/binabox-1x.webp",
+      "img_tablet_2x": "/img/articles/tablet/binabox-2x.webp",
+      "img_mobile_1x": "/img/articles/mobile/binabox-1x.webp",
+      "img_mobile_2x": "/img/articles/mobile/binabox-2x.webp",
+      "alt": "Creative Blog site",
+      "name": "Creative Blog",
+      "date": "15 APRIL 2025"
+    },
+    {
+      "href": "#",
+      "title": "Link to article Best Dishes",
+      "aria_labelledby": "best-dishes-link",
+      "img_desktop_1x": "/img/articles/desktop/dishes-1x.webp",
+      "img_desktop_2x": "/img/articles/desktop/dishes-2x.webp",
+      "img_tablet_1x": "/img/articles/tablet/dishes-1x.webp",
+      "img_tablet_2x": "/img/articles/tablet/dishes-2x.webp",
+      "img_mobile_1x": "/img/articles/mobile/dishes-1x.webp",
+      "img_mobile_2x": "/img/articles/mobile/dishes-2x.webp",
+      "alt": "Best Dishes site",
+      "name": "Best Dishes",
+      "date": "5 MAY 2025"
+    }
   ]
 }

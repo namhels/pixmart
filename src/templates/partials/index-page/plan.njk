@@ -5,7 +5,7 @@
   </div>
   <ul class="plan__list">
     {% for i in plan_list %}
-      <li class="plan__item">
+      <li class="holographic-card plan__item {% if i.state === "accent" %}plan__item--accent{% endif %}">
         <h4 class="title-xs plan__name">{{ i.name }}</h4>
         <p class="plan__price">
           <span class="title plan__price-number">{{ i.price_number }}</span>
@@ -22,15 +22,17 @@
           {% endfor %}
         </ul>
         <a
-          class="button plan__button"
+          class="button button--full-width {% if i.state !== "accent" %}button--secondary button--tertiary{% endif %}"
           href="#"
           title="Link to {{ i.name }}"
           target="_blank"
-          id="plan-subscribe-btn"
-          aria-labelledby="plan-subscribe-btn">
+          id="{{ i.aria_labelledby }}"
+          aria-labelledby="{{ i.aria_labelledby }}">
           Subscribe
         </a>
-        <div class="title-xs plan__item-tag">best seller</div>
+        {% if i.state === "accent" %}
+          <div class="title-xs plan__item-tag">best seller</div>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

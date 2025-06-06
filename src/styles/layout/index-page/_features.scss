@@ -1,4 +1,4 @@
-@use "../base/mixins" as *;
+@use "../../base/mixins" as *;
 
 .features-wrapper {
   overflow: hidden;
@@ -25,22 +25,28 @@
   &__item:hover,
   &__item:focus {
     outline: none;
-    transform: scale(0.97);
+    transform: scale(0.92);
   }
 
   &__icon-wrapper {
     padding: 32px;
+    box-sizing: border-box;
+    width: 224px;
     border-radius: 20px;
     background-color: var(--bg-alt2);
     color: var(--accent-color);
-
     transition: box-shadow var(--transition);
+
+    @include mq(tablet-only) {
+      width: 176px;
+      display: flex;
+    }
   }
 
   &__item:hover .features__icon-wrapper,
   &__item:focus .features__icon-wrapper{
     outline: none;
-    box-shadow: 0px 0px 10px 2px var(--accent-color);
+    box-shadow: 0 0 10px 2px var(--accent-color);
   }
 
   &__title {

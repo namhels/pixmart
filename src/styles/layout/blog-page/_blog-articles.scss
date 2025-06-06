@@ -1,4 +1,4 @@
-@use "../base/mixins" as *;
+@use "../../base/mixins" as *;
 
 .articles {
   &--blog {
@@ -22,22 +22,21 @@
     border-radius: 20px;
     background: var(--bg-base);
     box-shadow: var(--box-shadow-alt);
+    box-sizing: border-box;
 
     @include mq(tablet-only) {
-    flex-basis: calc(100% / 2 - 76px);
+    flex-basis: calc(100% / 2 - 16px);
     }
 
     &:last-child {
       @include mq(tablet-only) {
-        min-width: calc(100% - 80px);
+        min-width: 100%;
       }
     }
 
     &:last-child img {
       @include mq(tablet-only) {
         height: 272px;
-        object-fit: cover;
-        object-position: center;
       }
     }
   }

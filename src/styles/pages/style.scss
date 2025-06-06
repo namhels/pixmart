@@ -2,7 +2,6 @@
 @use "../base/mixins";
 @use "../base/global";
 @use "../base/vars";
-
 @use "../components/container";
 @use "../components/buttons";
 @use "../components/logo";
@@ -15,10 +14,8 @@
 @use "../components/burger";
 @use "../components/filter-burger";
 @use "../components/custom-range";
-
+@use "../components/filter-drop";
 @use "../layout/header";
-@use "../layout/footer";
-@use "../layout/footer-bottom";
 @use "../layout/index-page/hero";
 @use "../layout/index-page/features";
 @use "../layout/index-page/categories";
@@ -29,6 +26,9 @@
 @use "../layout/catalog-page/cat-hero";
 @use "../layout/catalog-page/cat-sidebar";
 @use "../layout/catalog-page/catalog";
+@use "../layout/catalog-page/card";
 @use "../layout/contact-page/contacts";
 @use "../layout/blog-page/blog";
 @use "../layout/blog-page/blog-articles";
+@use "../layout/footer";
+@use "../layout/footer-bottom";

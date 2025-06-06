@@ -12,7 +12,7 @@
   </div>
   <ul class="categories__list">
     {% for i in categories %}
-      <li class="categories__item {{ i.grid_class }} {% if i.empty === true %}categories__item-empty{% endif %}">
+      <li class="categories__item {{ i.grid_class }}">
         <svg class="categories__icon" width="48" height="48" aria-hidden="true">
           <use href="{{ i.svg }}"></use>
         </svg>

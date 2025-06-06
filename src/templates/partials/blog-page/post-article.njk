@@ -1,12 +1,13 @@
 <article class="post-article">
+  <h2 class="visually-hidden">blog description</h2>
   <article class="post">
     <div class="post__creator">
       <picture class="post__img-picture">
-        <source srcset="/img/blog/ava-1x.webp 1x, /img/blog/ava-2x.webp 2x" type="image/webp"/>
-        <img class="post__img" src="/img/blog/ava-1x.webp" alt="Post creator's avatar" loading="lazy"/>
+        <source srcset="/img/blog/ava-1x.webp 1x, /img/blog/ava-2x.webp 2x" type="image/webp">
+        <img class="post__img" src="/img/blog/ava-1x.webp" alt="Post creator's avatar" loading="lazy">
       </picture>
       <div class="post__creator-info">
-        <p class="title-xs post__creator-name">Emma Clarke</p>
+        <h2 class="title-xs post__creator-name">Emma Clarke</h2>
         <p class="post__creator-data">April 10, 2025</p>
       </div>
     </div>
@@ -44,16 +45,10 @@
         {% if i.state === "with-img" %}
         <figure class="article__figure">
           <picture class="article__img-picture">
-            <source
-              srcset="{{ i.img_1x }} 1x, {{ i.img_2x }} 2x"
-              type="image/webp"
-            />
-            <img
-              class="article__img"
-              src="{{ i.img_1x }}"
-              alt="{{ i.alt }}"
-              loading="lazy"
-            />
+            <source srcset="{{ i.img_desktop_1x }} 1x, {{ i.img_desktop_2x }} 2x" media="(min-width:1440px)" type="image/webp">
+            <source srcset="{{ i.img_tablet_1x }} 1x, {{ i.img_tablet_2x }} 2x" media="(min-width:1024px)" type="image/webp">
+            <source srcset="{{ i.img_mobile_1x }} 1x, {{ i.img_mobile_2x }} 2x" media="(max-width:1024px)" type="image/webp">
+            <img class="article__img" src="{{ i.img_desktop_1x }}" alt="{{ i.alt }}" loading="lazy">
           </picture>
           <figcaption class="article__figcaption">
             <p class="article__img-desc">{{ i.img_desc }}</p>

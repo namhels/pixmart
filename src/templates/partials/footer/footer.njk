@@ -10,30 +10,30 @@
   </div>
   <div class="footer__middle">
     {% include "partials/footer/socials.njk" %}
-    <div class="title-s footer__middle-text">
-      <p>Subscribe to</p>
-      <p>Design Newsletter</p>
-    </div>
-    <div class="footer__middle-tools">
-      <search class="footer__search">
-        <form class="footer__search-form">
-          <input
-            class="footer__search-input"
-            type="search"
-            name="search"
-            placeholder="Enter your email address ..."
-            aria-label="Enter your email address"/>
-        </form>
-      </search>
-      <a
-        class="button"
-        href="#"
-        title="Link to subscribe"
-        id="footer-subscribe-link"
-        aria-labelledby="footer-subscribe-link"
-        target="_blank">
-        Subscribe
-      </a>
-    </div>
+    <form class="footer__form">
+      <label class="title-s footer__label" for="enter-your-email-address">
+        Subscribe to
+        <br>
+        Design Newsletter
+      </label>
+      <div class="footer__form-tools">
+        <input
+          class="input footer__input"
+          type="email"
+          name="user-email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          id="enter-your-email-address"
+          placeholder="Enter your email address ..."
+          aria-label="Enter your email address">
+        <button
+          class="button"
+          type="submit"
+          title="Subscribe button"
+          id="footer-subscribe-button"
+          aria-labelledby="footer-subscribe-button">
+          Subscribe
+        </button>
+      </div>
+    </form>
   </div>
 </footer>

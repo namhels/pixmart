@@ -1,4 +1,4 @@
-@use "../base/mixins" as *;
+@use "../../base/mixins" as *;
 
 .plan {
   margin-bottom: 64px;
@@ -29,59 +29,48 @@
 
   &__list {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 16px;
+
+    @include mq(mobile-only) {
+      flex-direction: column;
+    }
   }
 
   &__item {
+    width: 408px;
+    box-sizing: border-box;
     position: relative;
-    max-width: 344px;
-    padding: 54px 32px 32px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
     background-color: var(--bg-base);
     border-radius: 20px;
-    box-shadow: 0px 4px 40px 0px rgba(29, 57, 95, 0.08);
+    box-shadow: var(--box-shadow);
     transition: transform var(--transition), border var(--transition);
 
     @include mq(tablet) {
-    max-width: 264px;
+      width: 304px;
     }
 
     @include mq(desktop) {
-    max-width: 352px;
+      width: 416px;
     }
   }
 
-  &__item:hover {
+  &__item--accent {
     transform: translateY(-32px);
     border: 2px solid var(--accent-color);
-  }
 
-  &__item:hover .plan__item-tag {
-    opacity: 1;
-  }
-
-  &__item:hover .plan__button {
-    border: unset;
-    color: var(--fixed-neutral-color-primary-white);
-    background-color: var(--accent-color);
-
-    &:hover {
-      background-color: var(--accent-color-alt);
+    @include mq(mobile-only) {
+      margin-top: 32px;
     }
 
-    &:focus {
-      outline: none;
-      box-shadow: 0px 0px 0px 4px var(--accent-color-alt) inset;
-    }
-
-    &:active {
-      background-color: var(--accent-color-alt2);
+    @include mq(tablet-only) {
+      padding-top: 56px;
     }
   }
 
@@ -123,26 +112,17 @@
     font-size: 16px;
   }
 
-  &__button {
-    width: calc(100% - 64px);
-    color: var(--text-icons-elements-primary);
-    background-color: var(--bg-base);
-    border: 2px solid var(--elements-seporator-bold);
-  }
-
   &__item-tag {
     position: absolute;
     top: 0;
     right: 0;
-    opacity: 0;
     display: flex;
     align-items: center;
     color: var(--bg-base);
     padding-inline: 24px;
     height: 40px;
-    border-radius: 0px 20px;
+    border-radius: 0 18px;
     background: var(--accent-color);
     text-transform: uppercase;
-    transition: opacity var(--transition);
   }
 }

@@ -28,6 +28,8 @@
 
   @include mq(tablet) {
     padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.4;
   }
 
   &:hover {
@@ -43,8 +45,8 @@
   &:focus {
     outline: none;
     border-radius: 5px;
-    color: var(--accent-color);
     border: 4px solid var(--accent-color);
+    color: var(--accent-color);
     transform: scale(1.2);
   }
 }

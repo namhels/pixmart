@@ -28,17 +28,4 @@
       background-image: url(/img/catalog-hero/desktop-2x.webp);
     }
   }
-
-  &__title {
-    color: var(--text-icons-elements-primary);
-
-    @include mq(tablet) {
-      font-size: 52px;
-      line-height: 1.2;
-    }
-  }
-
-  &__text-highlight {
-    color: var(--accent-color);
-  }
 }

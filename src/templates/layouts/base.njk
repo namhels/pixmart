@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Craft Your Success with Our Digital Assets">
     <title>{{ title }}</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/img/favicon-32x32.svg">
+    <link rel="icon" href="/src/images/static/favicon-32x32.png">
+    <link rel="icon" href="/img/favicon-32x32-1x.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     {% include "partials/header/header.njk" %}
@@ -67,7 +70,6 @@
         slideOne();
         slideTwo();
       };
-
       let sliderOne = document.getElementById("slider-1");
       let sliderTwo = document.getElementById("slider-2");
       let displayValOne = document.getElementById("range1");
@@ -75,7 +77,6 @@
       let minGap = 0;
       let sliderTrack = document.querySelector(".slider-track");
       let sliderMaxValue = document.getElementById("slider-1").max;
-
       function slideOne() {
         if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
           sliderOne.value = parseInt(sliderTwo.value) - minGap;

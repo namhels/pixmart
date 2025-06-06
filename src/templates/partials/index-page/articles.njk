@@ -1,7 +1,12 @@
 <section class="container section articles">
   <div class="articles__info">
     <h2 class="title articles__title">Latest Expert</h2>
-    <a class="hover-underline articles__link" href="#" title="Link to all articles" target="_blank" aria-labelledby="all-articles-link">
+    <a
+      class="hover-underline articles__link"
+      href="#"
+      title="Link to all articles"
+      target="_blank"
+      aria-labelledby="all-articles-link">
       <span id="all-articles-link">Explore All Articles</span>
       <svg class="articles__icon-chevron-right" width="16" height="16" aria-hidden="true">
         <use href="/img/sprite.svg#chevron-right"></use>
@@ -14,9 +19,10 @@
         <a class="articles__art-link" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-labelledby="{{ i.aria_labelledby }}">
           <article class="articles__art">
             <picture>
-              <source srcset="{{ i.img_1x }} 1x, {{ i.img_2x }} 2x" media="(min-width:1024px)" type="image/webp"/>
-              <source srcset="{{ i.img_mobile_1x }} 1x, {{ i.img_mobile_2x }} 2x" media="(max-width:1024px)" type="image/webp"/>
-              <img class="articles__img" src="{{ i.img_1x }}" alt="{{ i.alt }}" loading="lazy"/>
+              <source srcset="{{ i.img_desktop_1x }} 1x, {{ i.img_desktop_2x }} 2x" media="(min-width:1440px)" type="image/webp">
+              <source srcset="{{ i.img_tablet_1x }} 1x, {{ i.img_tablet_2x }} 2x" media="(min-width:1024px)" type="image/webp">
+              <source srcset="{{ i.img_mobile_1x }} 1x, {{ i.img_mobile_2x }} 2x" media="(max-width:1024px)" type="image/webp">
+              <img class="articles__img" src="{{ i.img_desktop_1x }}" alt="{{ i.alt }}" loading="lazy">
             </picture>
             <div class="articles__art-info">
               <h4 class="title-s articles__art-title" id="{{ i.aria_labelledby }}">

@@ -8,7 +8,7 @@
       title="Link to ask us a question"
       target="_blank"
       id="ask-us-a-question-btn"
-      aria-labelledby="ask-us-a-question-btn-btn">
+      aria-labelledby="ask-us-a-question-btn">
       Ask Us A Question
     </a>
   </div>
@@ -17,14 +17,14 @@
       <details class="faq__item">
         <summary class="title-xs faq__question" aria-labelledby="{{ i.aria_labelledby }}">
           <span id="{{ i.aria_labelledby }}">{{ i.faq_question }}</span>
-          <div class="button-icon button-icon--secondary faq__button" aria-label="Open and close FAQ">
+          <button class="button-icon button-icon--secondary faq__button">
             <svg class="faq__icon-chevron-down" width="16" height="16" aria-hidden="true">
               <use href="/img/sprite.svg#chevron-down"></use>
             </svg>
             <svg class="faq__icon-chevron-up" width="16" height="16" aria-hidden="true">
               <use href="/img/sprite.svg#chevron-up"></use>
             </svg>
-          </div>
+          </button>
         </summary>
         <p class="faq__answer">
           {{ i.faq_answer }}

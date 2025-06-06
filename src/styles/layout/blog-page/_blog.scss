@@ -141,12 +141,6 @@
     margin-bottom: 32px;
   }
 
-  &__item:nth-child(n+3) {
-    @include mq(mobile-only) {
-      @include visually-hidden
-    }
-  }
-
   &__title {
     margin-bottom: 16px;
     font-size: 24px;
@@ -161,10 +155,6 @@
   }
 
   &__figcaption {
-    @include mq(mobile-only) {
-      @include visually-hidden
-    }
-
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -182,10 +172,6 @@
   }
 
   &__blockquote {
-    @include mq(mobile-only) {
-      @include visually-hidden
-    }
-
     display: flex;
     align-items: start;
     gap: 16px;
@@ -199,10 +185,6 @@
   }
 
   &__last-text {
-    @include mq(mobile-only) {
-      @include visually-hidden
-    }
-
     height: 60px;
 
     // overflow: hidden;
