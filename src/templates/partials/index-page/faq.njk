@@ -14,10 +14,10 @@
   </div>
   <div class="faq__list">
     {% for i in faq %}
-      <details class="faq__item">
+      <details class="{{ i.class }} faq__item">
         <summary class="title-xs faq__question" aria-labelledby="{{ i.aria_labelledby }}">
           <span id="{{ i.aria_labelledby }}">{{ i.faq_question }}</span>
-          <button class="button-icon button-icon--secondary faq__button">
+          <button class="button-icon button-icon--secondary faq__button" type="button" title="Open and close answer button" aria-label="Open and close answer button" onclick="document.querySelector('.{{ i.class }}').open = !document.querySelector('.{{ i.class }}').open">
             <svg class="faq__icon-chevron-down" width="16" height="16" aria-hidden="true">
               <use href="/img/sprite.svg#chevron-down"></use>
             </svg>

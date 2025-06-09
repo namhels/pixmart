@@ -1,4 +1,5 @@
 {
+  "page_description": "Craft your success with our digital assets",
   "title": "Pixmart",
   "path": "./index.html",
 
@@ -72,25 +73,21 @@
   "categories": [
     {
       "svg": "img/sprite.svg#ui-kit",
-      "grid_class": "i1",
       "heading": "Templates",
       "text": "For all needs • Modern"
     },
     {
       "svg": "img/sprite.svg#social-media",
-      "grid_class": "i2",
       "heading": "App Icons",
       "text": "High-quality • Elegant"
     },
     {
       "svg": "img/sprite.svg#presentation",
-      "grid_class": "i3",
       "heading": "Slides",
       "text": "Pitch-ready • Creative"
     },
     {
       "svg": "img/sprite.svg#illustration",
-      "grid_class": "i4",
       "heading": "Design Tools",
       "text": "Easy to use • Unique"
     }
@@ -220,26 +217,31 @@
 
   "faq": [
     {
+      "class": "js-accordion1",
       "aria_labelledby": "faq-request",
       "faq_question": "Can I request a refund?",
       "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
     },
     {
+      "class": "js-accordion2",
       "aria_labelledby": "faq-access",
       "faq_question": "How do I access my purchased products?",
       "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
     },
     {
+      "class": "js-accordion3",
       "aria_labelledby": "faq-discounts",
       "faq_question": "Are there any discounts for bulk purchases?",
       "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
     },
     {
+      "class": "js-accordion4",
       "aria_labelledby": "faq-payment",
       "faq_question": "What payment methods do you accept here?",
       "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
     },
     {
+      "class": "js-accordion5",
       "aria_labelledby": "faq-sell",
       "faq_question": "Can I sell my digital products on this marketplace?",
       "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."

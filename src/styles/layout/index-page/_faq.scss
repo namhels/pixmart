@@ -26,10 +26,18 @@
 
   &__title {
     margin-bottom: 32px;
+
+    @include mq(tablet-only) {
+      width: 412px;
+    }
   }
 
   &__link {
     border: 2px solid var(--elements-seporator-bold);
+
+    @include mq(tablet) {
+      width: max-content;
+    }
   }
 
   &__list {

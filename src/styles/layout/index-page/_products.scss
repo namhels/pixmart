@@ -1,22 +1,17 @@
 @use "../../base/mixins" as *;
 
 .products {
-  flex-direction: column;
-  align-items: unset;
+  margin-bottom: 64px;
 
-  @include mq(desktop) {
-    align-items: center;
+  @include mq(tablet) {
+    margin-bottom: 120px;
   }
 
   &__header {
-    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 48px;
-
-    @include mq(tablet) {
-      justify-content: space-between;
-    }
   }
 
   &__tag {
