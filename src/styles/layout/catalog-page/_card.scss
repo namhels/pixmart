@@ -1,0 +1,71 @@
+@use "../../base/mixins" as *;
+
+.card {
+  &__img-wrapper {
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    min-width: 408px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+    @include mq(tablet) {
+      min-width: 293px;
+    }
+
+    @include mq(desktop) {
+      min-width: 325px;
+    }
+  }
+
+  &__img-tag {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    height: 40px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    background-color: var(--accent-color);
+
+    color: var(--fixed-neutral-color-primary-white);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__img-tag--sold-out {
+    background-color: var(--bg-base);
+    color: var(--text-icons-elements-secondary2);
+  }
+
+  &__img-tag--new {
+    background-color: var(--accent-color-emerald);
+  }
+
+  &__name,
+  &__price {
+    font-family: var(--font-accent);
+  }
+
+  &__desc {
+    margin-bottom: 12px;
+    color: var(--text-icons-elements-secondary);
+    font-size: 16px;
+  }
+
+  &__product-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__product-buttons {
+    margin-right: 9px;
+    display: flex;
+    gap: 8px;
+  }
+}

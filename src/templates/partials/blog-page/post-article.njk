@@ -1,0 +1,81 @@
+<article class="post-article">
+  <h2 class="visually-hidden">blog description</h2>
+  <article class="post">
+    <div class="post__creator">
+      <picture class="post__img-picture">
+        <source srcset="/img/blog/ava-1x.webp 1x, /img/blog/ava-2x.webp 2x" type="image/webp">
+        <img class="post__img" src="/img/blog/ava-1x.webp" alt="Post creator's avatar" loading="lazy">
+      </picture>
+      <div class="post__creator-info">
+        <h2 class="title-xs post__creator-name">Emma Clarke</h2>
+        <p class="post__creator-data">April 10, 2025</p>
+      </div>
+    </div>
+    <div class="post__categories">
+      <h3 class="title-s post__list-title">Categories</h3>
+      <ul class="post__categories-list">
+        {% for i in post_categories %}
+          <li class="post__categories-item post__text {% if i.state === "accent" %}post__categories-item--accent{% endif %}">
+            <p>{{ i.text }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="post__articles">
+      <h3 class="title-s post__list-title">Latest Articles</h3>
+      <ul class="post__articles-list">
+        {% for i in post_articles %}
+          <li class="post__articles-item">
+            <p class="title-xs post__articles-name">{{ i.name }}</p>
+            <p class="post__text">{{ i.date }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </article>
+  <article class="article">
+    <p>
+      In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the visual appeal of any project. Understanding the art of typography is essential for creating designs that not only attract attention but also communicate effectively. Here, we delve into practical tips that will help you master typography, transforming your creations into eye-catching masterpieces.
+    </p>
+    <ul class="article__list">
+      {% for i in article_list %}
+      <li class="article__item">
+        <h3 class="title-s article__title">{{ i.title }}</h3>
+        <p>{{ i.text }}</p>
+        {% if i.state === "with-img" %}
+        <figure class="article__figure">
+          <picture class="article__img-picture">
+            <source srcset="{{ i.img_desktop_1x }} 1x, {{ i.img_desktop_2x }} 2x" media="(min-width:1440px)" type="image/webp">
+            <source srcset="{{ i.img_tablet_1x }} 1x, {{ i.img_tablet_2x }} 2x" media="(min-width:1024px)" type="image/webp">
+            <source srcset="{{ i.img_mobile_1x }} 1x, {{ i.img_mobile_2x }} 2x" media="(max-width:1024px)" type="image/webp">
+            <img class="article__img" src="{{ i.img_desktop_1x }}" alt="{{ i.alt }}" loading="lazy">
+          </picture>
+          <figcaption class="article__figcaption">
+            <p class="article__img-desc">{{ i.img_desc }}</p>
+            <a
+              class="hover-underline article__link"
+              href="#"
+              title="{{ i.img_title }}"
+              target="_blank"
+              id="{{ i.aria_labelledby }}"
+              aria-labelledby="{{ i.aria_labelledby }}"
+            >
+              {{ i.img_link }}
+            </a>
+          </figcaption>
+        </figure>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    <blockquote class="title-s article__blockquote">
+      <svg class="article__icon-quote" width="64" height="64" aria-hidden="true">
+        <use href="/img/sprite.svg#quote"></use>
+      </svg>
+      Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul.
+    </blockquote>
+    <p class="article__last-text">
+      Typography is an art that speaks volumes beyond the mere letters on a surface. By applying these tips, designers can elevate their work from mere messages to powerful visual statements. Remember, mastering typography is a journey of continuous learning and experimentation. Embrace the process, and let your designs speak louder than words. Happy designing!
+    </p>
+  </article>
+</article>

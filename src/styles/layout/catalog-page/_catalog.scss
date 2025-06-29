@@ -1,0 +1,134 @@
+@use "../../base/mixins" as *;
+
+.catalog {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 96px;
+    padding: 10px;
+    width: 100%;
+    height: 52px;
+    background: linear-gradient(189deg, rgba(255, 255, 255, 0.50) -118.9%, #FFF 93.08%);
+    z-index: 1;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__filter-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include mq(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__select {
+    flex-grow: 2;
+    color: var(--text-icons-elements-primary);
+    font-family: var(--font-base);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+
+    border-radius: 8px;
+    border: 1px solid var(--elements-seporator-bold);
+    padding: 8px 20px;
+    height: 40px;
+    background: transparent url(/img/chevron-down.svg) no-repeat right 15px center;
+    background-size: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    transition: border var(--transition);
+  }
+
+  &__select:hover {
+    border: 1px solid var(--accent-color);
+  }
+
+  &__select:focus {
+    border: 1px solid var(--accent-color);
+    outline: none;
+  }
+
+  &__tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(tablet) {
+      gap: 24px;
+    }
+  }
+
+  &__tools-text {
+    color: var(--text-icons-elements-primary);
+    font-size: 16px;
+  }
+
+  &__tools-buttons {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__tags-button {
+    width: unset;
+    height: 32px;
+    padding: 6px 12px;
+    gap: 8px;
+    border: 1px solid var(--elements-seporator-bold);
+
+    color: var(--text-icons-elements-primary);
+    font-family: var(--font-base);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__item--sold-out {
+    border-radius: 20px;
+    opacity: 0.5;
+    background: var(--bg-alt2);
+  }
+
+  &__load-more-button {
+    width: unset;
+    align-self: center;
+    border: 2px solid var(--elements-seporator-bold);
+  }
+}

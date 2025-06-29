@@ -1,0 +1,14 @@
+<ul class="footer__navs">
+  {% for i in footer_navs_list %}
+    <li class="footer__navs-item">
+      <h3 id="{{ i.aria_labelledby }}" class="title-xs footer__nav-name">{{ i.name }}</h3>
+      <nav class="footer__nav" aria-labelledby="{{ i.aria_labelledby }}">
+        {% for e in i.footer_nav %}
+          <a class="footer__nav-link" href="{{ e.href }}" title="{{ e.title }}" target="_blank" id="{{ e.aria_labelledby }}" aria-labelledby="{{ e.aria_labelledby }}">
+            {{ e.text }}
+          </a>
+        {% endfor %}
+      </nav>
+    </li>
+  {% endfor %}
+</ul>

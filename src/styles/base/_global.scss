@@ -1,0 +1,179 @@
+@use "../base/mixins" as *;
+
+body {
+  font-family: var(--font-base);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+
+  min-width: 360px;
+  color: var(--text-icons-elements-secondary);
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+// ========= <<< text-styles >>> ===========
+
+.title-l {
+  color: var(--text-icons-elements-primary);
+  font-family: var(--font-accent);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.title {
+  color: var(--text-icons-elements-alt);
+  font-family: var(--font-accent);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+
+
+  &--hero {
+    color: var(--text-icons-elements-primary);
+
+    @include mq(tablet) {
+      font-size: 52px;
+      line-height: 1.2;
+    }
+  }
+
+  &--highlight {
+    color: var(--accent-color);
+  }
+}
+
+.title-s {
+  color: var(--text-icons-elements-primary);
+  font-family: var(--font-accent);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.title-xs {
+  color: var(--text-icons-elements-primary);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.title-tag {
+  color: var(--accent-color-alt3);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+// ========= <<< utils >>> ===========
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+
+  @include mq(tablet) {
+    margin-bottom: 120px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text-overflow-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// ========= <<< hover-underline >>> ===========
+
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, var(--accent-color-alt), #00ffff);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition);
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+  background: linear-gradient(to right, var(--accent-color-alt), #00ffff);
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+// ========= <<< hover-holographic-card >>> ===========
+
+.holographic-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.holographic-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.8s ease;
+  opacity: 0;
+  z-index: 2;
+}
+
+.holographic-card:hover {
+  z-index: 2;
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}

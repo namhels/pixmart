@@ -1,0 +1,60 @@
+.switcher label {
+  padding-left: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.switcher label:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 36px;
+  height: 18px;
+  border-radius: 19px;
+  border: 2px solid var(--elements-seporator-bold);
+  background-color: var(--elements-seporator-bold);
+  transition: background-color var(--transition), border var(--transition);
+}
+
+.switcher input:checked + .label {
+  color: var(--accent-color);
+}
+
+.switcher input + label:focus::before {
+  border: 2px solid var(--accent-color);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--bg-base), 0 0 0 4px var(--accent-color);
+}
+
+.switcher input + label:hover::before {
+  background-color: var(--elements-seporator);
+  border: 2px solid var(--elements-seporator);
+}
+
+.switcher input:checked + label::before {
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.switcher input:checked + label:hover::before {
+  background-color: var(--accent-color-alt);
+  border: 2px solid var(--accent-color-alt);
+}
+
+.switcher input + label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--bg-base);
+  transition: all var(--transition);
+}
+
+.switcher input:checked + label::after {
+  transform: translateX(20px);
+  background-color: var(--bg-base);
+}

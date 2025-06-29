@@ -1,0 +1,128 @@
+@use "../../base/mixins" as *;
+
+.plan {
+  margin-bottom: 64px;
+
+  @include mq(tablet) {
+    margin-bottom: 120px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 48px;
+
+    @include mq(tablet) {
+      margin-bottom: 104px;
+    }
+
+    @include mq(desktop) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    @include mq(mobile-only) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    width: 408px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: var(--bg-base);
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition), border var(--transition);
+
+    @include mq(tablet) {
+      width: 304px;
+    }
+
+    @include mq(desktop) {
+      width: 416px;
+    }
+  }
+
+  &__item--accent {
+    transform: translateY(-32px);
+    border: 2px solid var(--accent-color);
+
+    @include mq(mobile-only) {
+      margin-top: 32px;
+    }
+
+    @include mq(tablet-only) {
+      padding-top: 56px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 16px;
+  }
+
+  &__price {
+    margin-bottom: 32px;
+  }
+
+  &__price-number {
+    color: var(--text-icons-elements-primary);
+  }
+
+  &__price-text {
+    color: var(--text-icons-elements-primary);
+    font-family: var(--font-base);
+    font-size: 16px;
+    opacity: 0.5;
+  }
+
+  &__condition-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-block: 40px;
+    border-top: 1px solid var(--elements-line);
+  }
+
+  &__condition-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__condition-text {
+    color: var(--text-icons-elements-primary);
+    font-size: 16px;
+  }
+
+  &__item-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    color: var(--bg-base);
+    padding-inline: 24px;
+    height: 40px;
+    border-radius: 0 18px;
+    background: var(--accent-color);
+    text-transform: uppercase;
+  }
+}

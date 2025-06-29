@@ -1,0 +1,93 @@
+@use "../base/mixins" as *;
+
+.footer-bottom {
+  padding-block: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: var(--text-icons-elements-primary);
+
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unset;
+  }
+
+  &__text {
+    color: var(--text-icons-elements-secondary2-invert);
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__copyright-link {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    color: var(--text-icons-elements-secondary2-invert);
+    font-size: 16px;
+    transition: color var(--transition);
+  }
+
+  &__copyright-link:hover {
+    color: var(--bg-base);
+  }
+
+  &__copyright-icon {
+    color: var(--bg-base);
+  }
+
+  &__copyright-link:hover .footer-bottom__copyright-icon {
+    animation: bro-give-me-a-chance-please 800ms infinite linear;
+  }
+
+  @keyframes bro-give-me-a-chance-please {
+    0% {
+      color: var(--accent-color);
+      transform: scale(1);
+    }
+    50% {
+      color: red;
+      transform: scale(2.2);
+    }
+    100% {
+      color: var(--accent-color);
+      transform: scale(1);
+    }
+  }
+}
+
+.terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+
+  &__item:not(:last-child) {
+    position: relative;
+  }
+
+  &__item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: var(--text-icons-elements-secondary2-invert);
+  }
+
+  &__link {
+    color: var(--text-icons-elements-secondary2-invert);
+    font-size: 16px;
+    transition: color var(--transition);
+  }
+
+  &__link:hover {
+    color: var(--bg-base);
+  }
+}

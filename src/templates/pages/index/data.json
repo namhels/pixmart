@@ -1,0 +1,281 @@
+{
+  "page_description": "Craft your success with our digital assets",
+  "title": "Pixmart",
+  "path": "./index.html",
+
+  "banner_photos": [
+    {
+      "class": "banner__photo1",
+      "img_desktop_1x": "/img/hero/desktop/photo1-1x.webp",
+      "img_desktop_2x": "/img/hero/desktop/photo1-2x.webp",
+      "img_tablet_1x": "/img/hero/tablet/photo1-1x.webp",
+      "img_tablet_2x": "/img/hero/tablet/photo1-2x.webp",
+      "img_mobile_1x": "/img/hero/mobile/photo1-1x.webp",
+      "img_mobile_2x": "/img/hero/mobile/photo1-2x.webp",
+      "alt": "Website on laptop screen"
+    },
+    {
+      "class": "banner__photo2",
+      "img_desktop_1x": "/img/hero/desktop/photo2-1x.webp",
+      "img_desktop_2x": "/img/hero/desktop/photo2-2x.webp",
+      "img_tablet_1x": "/img/hero/tablet/photo2-1x.webp",
+      "img_tablet_2x": "/img/hero/tablet/photo2-2x.webp",
+      "img_mobile_1x": "/img/hero/mobile/photo2-1x.webp",
+      "img_mobile_2x": "/img/hero/mobile/photo2-2x.webp",
+      "alt": "Grid site gallery"
+    },
+    {
+      "class": "banner__photo3",
+      "img_desktop_1x": "/img/hero/desktop/photo3-1x.webp",
+      "img_desktop_2x": "/img/hero/desktop/photo3-2x.webp",
+      "img_tablet_1x": "/img/hero/tablet/photo3-1x.webp",
+      "img_tablet_2x": "/img/hero/tablet/photo3-2x.webp",
+      "img_mobile_1x": "/img/hero/mobile/photo3-1x.webp",
+      "img_mobile_2x": "/img/hero/mobile/photo3-2x.webp",
+      "alt": "Website banner gallery"
+    }
+  ],
+
+  "banner_icons": [
+    {
+      "class": "banner__icon-wrapper1",
+      "svg": "img/sprite.svg#hero-icon1"
+    },
+    {
+      "class": "banner__icon-wrapper2",
+      "svg": "img/sprite.svg#hero-icon2"
+    }
+  ],
+
+  "features": [
+    {
+      "title": "UI Kits",
+      "svg": "img/sprite.svg#ui-kit"
+    },
+    {
+      "title": "Social Media",
+      "svg": "img/sprite.svg#social-media"
+    },
+    {
+      "title": "Presentation",
+      "svg": "img/sprite.svg#presentation"
+    },
+    {
+      "title": "Fonts",
+      "svg": "img/sprite.svg#font"
+    },
+    {
+      "title": "Illustrations",
+      "svg": "img/sprite.svg#illustration"
+    }
+  ],
+
+  "categories": [
+    {
+      "svg": "img/sprite.svg#ui-kit",
+      "heading": "Templates",
+      "text": "For all needs • Modern"
+    },
+    {
+      "svg": "img/sprite.svg#social-media",
+      "heading": "App Icons",
+      "text": "High-quality • Elegant"
+    },
+    {
+      "svg": "img/sprite.svg#presentation",
+      "heading": "Slides",
+      "text": "Pitch-ready • Creative"
+    },
+    {
+      "svg": "img/sprite.svg#illustration",
+      "heading": "Design Tools",
+      "text": "Easy to use • Unique"
+    }
+  ],
+
+  "products_buttons_icon": [
+    {
+      "aria_labelledby": "prev-items",
+      "text": "Previous items",
+      "svg": "/img/sprite.svg#chevron-left"
+    },
+    {
+      "aria_labelledby": "next-items",
+      "text": "Next items",
+      "svg": "/img/sprite.svg#chevron-right"
+    }
+  ],
+
+  "products": [
+    {
+      "href": "#",
+      "title": "Link to our product Travel Hero",
+      "img_1x": "/img/products/travel-hero-1x.webp",
+      "img_2x": "/img/products/travel-hero-2x.webp",
+      "alt": "Travel Hero site",
+      "svg": "/img/sprite.svg#trophy",
+      "name": "Travel Hero",
+      "price": "€29.99",
+      "text": "Adventure • Journey"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Healthcare Pro",
+      "img_1x": "/img/products/healthcare-pro-1x.webp",
+      "img_2x": "/img/products/healthcare-pro-2x.webp",
+      "alt": "Healthcare Pro site",
+      "svg": "/img/sprite.svg#trophy",
+      "name": "Healthcare Pro",
+      "price": "€15.99",
+      "text": "Medical • Wellness"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Foodish Delight",
+      "img_1x": "/img/products/foodish-delight-1x.webp",
+      "img_2x": "/img/products/foodish-delight-2x.webp",
+      "alt": "Foodish Delight site",
+      "name": "Foodish Delight",
+      "price": "€31.99",
+      "text": "Catering • Food"
+    },
+    {
+      "href": "#",
+      "title": "Link to our product Real Estate",
+      "img_1x": "/img/products/real-estate-1x.webp",
+      "img_2x": "/img/products/real-estate-2x.webp",
+      "alt": "Real Estate site",
+      "name": "Real Estate",
+      "price": "€40.99",
+      "text": "Modern • Homes"
+    }
+  ],
+
+  "plan_list": [
+    {
+      "name": "Standard Membership",
+      "price_number": "€14.99",
+      "price_text": "/ Month",
+      "aria_labelledby": "standard-plan-subscribe-btn",
+      "plan_conditions": [
+        {
+          "condition_text": "Enhanced Resource Access"
+        },
+        {
+          "condition_text": "Monthly Credits"
+        },
+        {
+          "condition_text": "Priority Customer Support"
+        },
+        {
+          "condition_text": "Community Features Access"
+        }
+      ]
+    },
+    {
+      "name": "Plus Membership",
+      "price_number": "€29.99",
+      "price_text": "/ Month",
+      "aria_labelledby": "plus-plan-subscribe-btn",
+      "state": "accent",
+      "plan_conditions": [
+        {
+          "condition_text": "All Standard Benefits"
+        },
+        {
+          "condition_text": "Increased Monthly Credits"
+        },
+        {
+          "condition_text": "Early Access to New Releases"
+        },
+        {
+          "condition_text": "Member-Only Offers"
+        }
+      ]
+    },
+    {
+      "name": "Pro Membership",
+      "price_number": "€49.99",
+      "price_text": "/ Month",
+      "aria_labelledby": "pro-plan-subscribe-btn",
+      "plan_conditions": [
+        {
+          "condition_text": "All Plus Benefits"
+        },
+        {
+          "condition_text": "Unlimited Downloads"
+        },
+        {
+          "condition_text": "Custom Licensing"
+        },
+        {
+          "condition_text": "Direct Creator Collaboration"
+        }
+      ]
+    }
+  ],
+
+  "faq": [
+    {
+      "class": "js-accordion1",
+      "aria_labelledby": "faq-request",
+      "faq_question": "Can I request a refund?",
+      "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    },
+    {
+      "class": "js-accordion2",
+      "aria_labelledby": "faq-access",
+      "faq_question": "How do I access my purchased products?",
+      "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    },
+    {
+      "class": "js-accordion3",
+      "aria_labelledby": "faq-discounts",
+      "faq_question": "Are there any discounts for bulk purchases?",
+      "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    },
+    {
+      "class": "js-accordion4",
+      "aria_labelledby": "faq-payment",
+      "faq_question": "What payment methods do you accept here?",
+      "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    },
+    {
+      "class": "js-accordion5",
+      "aria_labelledby": "faq-sell",
+      "faq_question": "Can I sell my digital products on this marketplace?",
+      "faq_answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download."
+    }
+  ],
+
+  "articles": [
+    {
+      "href": "#",
+      "title": "Link to article Creative Blog",
+      "aria_labelledby": "creative-blog-link",
+      "img_desktop_1x": "/img/articles/desktop/binabox-1x.webp",
+      "img_desktop_2x": "/img/articles/desktop/binabox-2x.webp",
+      "img_tablet_1x": "/img/articles/tablet/binabox-1x.webp",
+      "img_tablet_2x": "/img/articles/tablet/binabox-2x.webp",
+      "img_mobile_1x": "/img/articles/mobile/binabox-1x.webp",
+      "img_mobile_2x": "/img/articles/mobile/binabox-2x.webp",
+      "alt": "Creative Blog site",
+      "name": "Creative Blog",
+      "date": "15 APRIL 2025"
+    },
+    {
+      "href": "#",
+      "title": "Link to article Best Dishes",
+      "aria_labelledby": "best-dishes-link",
+      "img_desktop_1x": "/img/articles/desktop/dishes-1x.webp",
+      "img_desktop_2x": "/img/articles/desktop/dishes-2x.webp",
+      "img_tablet_1x": "/img/articles/tablet/dishes-1x.webp",
+      "img_tablet_2x": "/img/articles/tablet/dishes-2x.webp",
+      "img_mobile_1x": "/img/articles/mobile/dishes-1x.webp",
+      "img_mobile_2x": "/img/articles/mobile/dishes-2x.webp",
+      "alt": "Best Dishes site",
+      "name": "Best Dishes",
+      "date": "5 MAY 2025"
+    }
+  ]
+}

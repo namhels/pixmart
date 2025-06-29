@@ -1,0 +1,10 @@
+<section class="container section blog">
+  <h2 class="visually-hidden">blog</h2>
+  <picture class="blog__img-picture">
+    <source srcset="/img/blog/desktop/office-1x.webp 1x, /img/blog/desktop/office-2x.webp 2x" media="(min-width:1440px)" type="image/webp">
+    <source srcset="/img/blog/tablet/office-1x.webp 1x, /img/blog/tablet/office-2x.webp 2x" media="(min-width:1024px)" type="image/webp">
+    <source srcset="/img/blog/mobile/office-1x.webp 1x, /img/blog/mobile/office-2x.webp 2x" media="(max-width:1024px)" type="image/webp">
+    <img class="blog__img" src="/img/blog/desktop/office-1x.webp" alt="Man in lecture hall showing graphs on stand" loading="lazy">
+  </picture>
+  {% include "partials/blog-page/post-article.njk" %}
+</section>

@@ -1,0 +1,16 @@
+@use "../base/mixins" as *;
+
+.container {
+  margin-inline: auto;
+  padding-inline: 16px;
+
+  @include mq(tablet) {
+    max-width: 1024px;
+    padding-inline: 40px;
+  }
+
+  @include mq(desktop) {
+    max-width: 1440px;
+    padding-inline: 80px;
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "my_github_link": "https://github.com/namhels",
+
+  "nav": [
+    {
+      "url": "./index.html",
+      "text": "About",
+      "aria_labelledby": "nav-about"
+    },
+    {
+      "url": "./catalog.html",
+      "text": "Products",
+      "aria_labelledby": "nav-products"
+    },
+    {
+      "url": "#",
+      "text": "Creators",
+      "aria_labelledby": "nav-creators"
+    },
+    {
+      "url": "./blog.html",
+      "text": "Blog",
+      "aria_labelledby": "nav-blog"
+    },
+    {
+      "url": "./contact.html",
+      "text": "Contact",
+      "aria_labelledby": "nav-contact"
+    }
+  ],
+
+  "footer_navs_list": [
+    {
+      "aria_labelledby": "company-nav",
+      "name": "Company",
+      "footer_nav": [
+        {
+          "href": "#",
+          "title": "Link to Homepage-v1",
+          "aria_labelledby": "homepage-v1-nav-item",
+          "text": "Homepage v1"
+        },
+        {
+          "href": "#",
+          "title": "Link to Homepage-v2",
+          "aria_labelledby": "homepage-v2-nav-item",
+          "text": "Homepage v2"
+        },
+        {
+          "href": "#",
+          "title": "Link to Homepage-v3",
+          "aria_labelledby": "homepage-v3-nav-item",
+          "text": "Homepage v3"
+        },
+        {
+          "href": "#",
+          "title": "Link to About Us",
+          "aria_labelledby": "about-us-nav-item",
+          "text": "About Us"
+        },
+        {
+          "href": "#",
+          "title": "Link to Creators",
+          "aria_labelledby": "creators-nav-item",
+          "text": "Creators"
+        },
+        {
+          "href": "#",
+          "title": "Link to Blog Articles",
+          "aria_labelledby": "blog-articles-nav-item",
+          "text": "Blog Articles"
+        }
+      ]
+    },
+    {
+      "aria_labelledby": "products-nav",
+      "name": "Products",
+      "footer_nav": [
+        {
+          "href": "#",
+          "title": "Link to Website",
+          "aria_labelledby": "website-nav-item",
+          "text": "Website"
+        },
+        {
+          "href": "#",
+          "title": "Link to Mobile App",
+          "aria_labelledby": "mobile-app-nav-item",
+          "text": "Mobile App"
+        },
+        {
+          "href": "#",
+          "title": "Link to Social Media Feeds",
+          "aria_labelledby": "social-media-feeds-nav-item",
+          "text": "Social Media Feeds"
+        },
+        {
+          "href": "#",
+          "title": "Link to Presentation",
+          "aria_labelledby": "presentation-nav-item",
+          "text": "Presentation"
+        },
+        {
+          "href": "#",
+          "title": "Link to Product Mockups",
+          "aria_labelledby": "product-mockups-nav-item",
+          "text": "Product Mockups"
+        },
+        {
+          "href": "#",
+          "title": "Link to Illustrations",
+          "aria_labelledby": "illustrations-nav-item",
+          "text": "Illustrations"
+        }
+      ]
+    },
+    {
+      "aria_labelledby": "account-nav",
+      "name": "Account",
+      "footer_nav": [
+        {
+          "href": "#",
+          "title": "Link to Your Cart",
+          "aria_labelledby": "your-cart-nav-item",
+          "text": "Your Cart"
+        },
+        {
+          "href": "#",
+          "title": "Link to Check Out",
+          "aria_labelledby": "check-out-nav-item",
+          "text": "Check Out"
+        },
+        {
+          "href": "#",
+          "title": "Link to Refund Policy",
+          "aria_labelledby": "refund-policy-nav-item",
+          "text": "Refund Policy"
+        },
+        {
+          "href": "#",
+          "title": "Link to Company Policy",
+          "aria_labelledby": "company-policy-nav-item",
+          "text": "Company Policy"
+        },
+        {
+          "href": "#",
+          "title": "Link to Send A Message",
+          "aria_labelledby": "send-a-message-nav-item",
+          "text": "Send A Message"
+        },
+        {
+          "href": "#",
+          "title": "Link to Customer Support",
+          "aria_labelledby": "customer-support-nav-item",
+          "text": "Customer Support"
+        }
+      ]
+    }
+  ],
+
+  "footer_socials": [
+    {
+      "href": "#",
+      "title": "Link to Twitter",
+      "aria_label": "Link to Twitter",
+      "svg": "img/sprite.svg#twitter"
+    },
+    {
+      "href": "#",
+      "title": "Link to Facebook",
+      "aria_label": "Link to Facebook",
+      "svg": "img/sprite.svg#facebook"
+    },
+    {
+      "href": "#",
+      "title": "Link to Telegram",
+      "aria_label": "Link to Telegram",
+      "svg": "img/sprite.svg#telegram"
+    }
+  ],
+
+  "terms": [
+    {
+      "href": "#",
+      "title": "Link to Privacy Policy",
+      "aria_labelledby": "privacy-policy-link",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "#",
+      "title": "Link to Terms and Condition",
+      "aria_labelledby": "terms-and-condition-link",
+      "text": "Terms and Condition"
+    },
+    {
+      "href": "#",
+      "title": "Link to Site Map",
+      "aria_labelledby": "site-map-link",
+      "text": "Site Map"
+    }
+  ],
+
+  "articles": [
+    {
+      "href": "#",
+      "title": "Link to article Creative Blog",
+      "aria_labelledby": "creative-blog-link",
+      "img_desktop_1x": "/img/articles/desktop/binabox-1x.webp",
+      "img_desktop_2x": "/img/articles/desktop/binabox-2x.webp",
+      "img_tablet_1x": "/img/articles/tablet/binabox-1x.webp",
+      "img_tablet_2x": "/img/articles/tablet/binabox-2x.webp",
+      "img_mobile_1x": "/img/articles/mobile/binabox-1x.webp",
+      "img_mobile_2x": "/img/articles/mobile/binabox-2x.webp",
+      "alt": "Creative Blog site",
+      "name": "Creative Blog",
+      "date": "15 APRIL 2025"
+    },
+    {
+      "href": "#",
+      "title": "Link to article Best Dishes",
+      "aria_labelledby": "best-dishes-link",
+      "img_desktop_1x": "/img/articles/desktop/dishes-1x.webp",
+      "img_desktop_2x": "/img/articles/desktop/dishes-2x.webp",
+      "img_tablet_1x": "/img/articles/tablet/dishes-1x.webp",
+      "img_tablet_2x": "/img/articles/tablet/dishes-2x.webp",
+      "img_mobile_1x": "/img/articles/mobile/dishes-1x.webp",
+      "img_mobile_2x": "/img/articles/mobile/dishes-2x.webp",
+      "alt": "Best Dishes site",
+      "name": "Best Dishes",
+      "date": "5 MAY 2025"
+    }
+  ]
+}

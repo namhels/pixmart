@@ -1,0 +1,31 @@
+@use "../../base/mixins" as *;
+
+.catalog-hero {
+  padding: 64px 51px 96px 16px;
+  background-color: var(--bg-base);
+  background-image: url(/img/catalog-hero/mobile-1x.webp);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq(retina) {
+    background-image: url(/img/catalog-hero/mobile-2x.webp);
+  }
+
+  @include mq(tablet) {
+    padding: 64px 80px 100px;
+    background-image: url(/img/catalog-hero/tablet-1x.webp);
+
+    @include mq(retina) {
+      background-image: url(/img/catalog-hero/tablet-2x.webp);
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: url(/img/catalog-hero/desktop-1x.webp);
+
+    @include mq(retina) {
+      background-image: url(/img/catalog-hero/desktop-2x.webp);
+    }
+  }
+}

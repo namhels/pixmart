@@ -1,0 +1,9 @@
+<div class="socials">
+  {% for i in footer_socials %}
+    <a class="socials__link" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-label="{{ i.aria_label }}">
+      <svg width="24" height="24" aria-hidden="true">
+        <use href="{{ i.svg }}"></use>
+      </svg>
+    </a>
+  {% endfor %}
+</div>

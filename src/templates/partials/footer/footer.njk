@@ -1,0 +1,39 @@
+<footer class="container footer">
+  <div class="footer__top">
+    <div class="footer__logo-slogan">
+      {% include "partials/footer/logo.njk" %}
+      <p class="footer__slogan">
+        Your premium digital assets solution with high quality and comprehensive range of products and services.
+      </p>
+    </div>
+    {% include "partials/footer/navs.njk" %}
+  </div>
+  <div class="footer__middle">
+    {% include "partials/footer/socials.njk" %}
+    <form class="footer__form">
+      <label class="title-s footer__label" for="enter-your-email-address">
+        Subscribe to
+        <br>
+        Design Newsletter
+      </label>
+      <div class="footer__form-tools">
+        <input
+          class="input footer__input"
+          type="email"
+          name="user-email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          id="enter-your-email-address"
+          placeholder="Enter your email address ..."
+          aria-label="Enter your email address">
+        <button
+          class="button footer__button"
+          type="submit"
+          title="Subscribe button"
+          id="footer-subscribe-button"
+          aria-labelledby="footer-subscribe-button">
+          Subscribe
+        </button>
+      </div>
+    </form>
+  </div>
+</footer>

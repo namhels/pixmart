@@ -1,0 +1,9 @@
+<div class="side-menu">
+  <nav class="nav" aria-label="Main navigation">
+    {% for i in nav %}
+      <a class="hover-underline nav__link {% if i.url === path %}nav__link--current{% endif %}" href="{{ i.url }}" id="{{ i.aria_labelledby }}" aria-labelledby="{{ i.aria_labelledby }}">
+        {{ i.text }}
+      </a>
+    {% endfor %}
+  </nav>
+</div>

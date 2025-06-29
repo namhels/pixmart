@@ -1,0 +1,55 @@
+<section class="products">
+  <div class="container products__header">
+    <div class="products__info">
+      <h3 class="title-tag products__tag">trending</h3>
+      <h2 class="title">Popular Products</h2>
+    </div>
+    <ul class="products__buttons-icon">
+      {% for i in products_buttons_icon %}
+        <li>
+          <button class="button-icon button-icon--secondary button-icon--lg" type="button" aria-labelledby="{{ i.aria_labelledby }}">
+            <span id="{{ i.aria_labelledby }}" class="visually-hidden">{{ i.text }}</span>
+            <svg width="24" height="24" aria-hidden="true">
+              <use class="button-icon__icon" href="{{ i.svg }}"></use>
+            </svg>
+          </button>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="products__list-wrapper">
+    <ul class="container products__list">
+      {% for i in products %}
+        <li class="products__item">
+          <article class="product">
+            <div class="product__img-wrapper">
+              <picture>
+                <source srcset="{{ i.img_1x }} 1x, {{ i.img_2x }} 2x" type="image/webp">
+                <img class="product__img" src="{{ i.img_1x }}" alt="{{ i.alt }}" loading="lazy">
+              </picture>
+              {% if i.svg %}
+                <div class="product__svg-wrapper">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use href="{{ i.svg }}"></use>
+                  </svg>
+                </div>
+              {% endif %}
+              <div class="product__overlay">
+                <a class="button product__overlay-button" href="{{ i.href }}" title="{{ i.title }}" target="_blank" aria-label="{{ i.title }}">
+                  Go to product
+                </a>
+              </div>
+            </div>
+            <div class="product__info">
+              <h4 class="title-s product__title">
+                {{ i.name }}
+              </h4>
+              <p class="product__price">{{ i.price }}</p>
+            </div>
+            <p class="product__text">{{ i.text }}</p>
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,114 @@
+{
+  "page_description": "Mastering the art of typography",
+  "title": "Pixmart - blog",
+  "path": "./blog.html",
+
+  "post_categories": [
+    {
+      "text": "Graphic Design Trends"
+    },
+    {
+      "text": "Typography & Fonts",
+      "state": "accent"
+    },
+    {
+      "text": "UI/UX Design"
+    },
+    {
+      "text": "Branding & Identity"
+    },
+    {
+      "text": "Illustration"
+    },
+    {
+      "text": "Digital Marketing"
+    }
+  ],
+
+  "post_articles": [
+    {
+      "name": "Text",
+      "date": "March 15, 2024"
+    },
+    {
+      "name": "Text",
+      "date": "March 15, 2024"
+    }
+  ],
+
+  "article_list": [
+    {
+      "title": "1. Understand Typeface Selection",
+      "text": "The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated."
+    },
+    {
+      "title": "2. Create a Typographic Hierarchy",
+      "text": "A well-defined typographic hierarchy organizes information, making it easier for readers to navigate through the content. Use different font sizes, weights, and styles to differentiate between headings, subheadings, and body text. This hierarchy not only improves readability but also adds visual interest to your next future design.",
+      "state": "with-img",
+      "img_desktop_1x": "/img/blog/desktop/typography-1x.webp",
+      "img_desktop_2x": "/img/blog/desktop/typography-2x.webp",
+      "img_tablet_1x": "/img/blog/tablet/typography-1x.webp",
+      "img_tablet_2x": "/img/blog/tablet/typography-2x.webp",
+      "img_mobile_1x": "/img/blog/mobile/typography-1x.webp",
+      "img_mobile_2x": "/img/blog/mobile/typography-2x.webp",
+      "alt": "Example of font usage in typography",
+      "img_desc": "Example of font usage in typography.",
+      "img_title": "Link to get this asset",
+      "aria_labelledby": "link-get-this-asset",
+      "img_link": "Get this asset"
+    },
+    {
+      "title": "3. Experiment with Alignment",
+      "text": "While center and right alignments have their place, left-aligned text is generally the most legible and comfortable for readers, especially for longer passages. However, don’t shy away from experimenting with different alignments in headings or callouts to add dynamism to your layout."
+    },
+    {
+      "title": "4. Embrace White Space",
+      "text": "White space, or negative space, is a powerful tool in typography. It helps in decluttering designs and allows each typographic element to breathe. Proper use of white space can significantly improve the overall balance and composition of your design."
+    }
+  ],
+
+  "articles": [
+    {
+      "href": "#",
+      "title": "Link to article Best Dishes",
+      "aria_labelledby": "best-dishes-blog-link",
+      "img_desktop_1x": "/img/blog/desktop/best-dishes-1x.webp",
+      "img_desktop_2x": "/img/blog/desktop/best-dishes-2x.webp",
+      "img_tablet_1x": "/img/blog/tablet/best-dishes-1x.webp",
+      "img_tablet_2x": "/img/blog/tablet/best-dishes-2x.webp",
+      "img_mobile_1x": "/img/blog/mobile/best-dishes-1x.webp",
+      "img_mobile_2x": "/img/blog/mobile/best-dishes-2x.webp",
+      "alt": "Best Dishes site",
+      "name": "Best Dishes",
+      "date": "15 APRIL 2025"
+    },
+    {
+      "href": "#",
+      "title": "Link to article Contact Us Lotus Spa",
+      "aria_labelledby": "lotus-spa-blog-link",
+      "img_desktop_1x": "/img/blog/desktop/lotus-spa-1x.webp",
+      "img_desktop_2x": "/img/blog/desktop/lotus-spa-2x.webp",
+      "img_tablet_1x": "/img/blog/tablet/lotus-spa-1x.webp",
+      "img_tablet_2x": "/img/blog/tablet/lotus-spa-2x.webp",
+      "img_mobile_1x": "/img/blog/mobile/lotus-spa-1x.webp",
+      "img_mobile_2x": "/img/blog/mobile/lotus-spa-2x.webp",
+      "alt": "Contact Us Lotus Spa site",
+      "name": "Contact Us Lotus Spa",
+      "date": "5 MAY 2025"
+    },
+    {
+      "href": "#",
+      "title": "Link to article Creative Blog",
+      "aria_labelledby": "creative-blog-blog-link",
+      "img_desktop_1x": "/img/blog/desktop/creative-blog-1x.webp",
+      "img_desktop_2x": "/img/blog/desktop/creative-blog-2x.webp",
+      "img_tablet_1x": "/img/blog/tablet/creative-blog-1x.webp",
+      "img_tablet_2x": "/img/blog/tablet/creative-blog-2x.webp",
+      "img_mobile_1x": "/img/blog/mobile/creative-blog-1x.webp",
+      "img_mobile_2x": "/img/blog/mobile/creative-blog-2x.webp",
+      "alt": "Creative Blog site",
+      "name": "Creative Blog",
+      "date": "20 JUNE 2025"
+    }
+  ]
+}

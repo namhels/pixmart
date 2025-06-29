@@ -1,0 +1,47 @@
+<section class="filter">
+  <h2 class="visually-hidden">filter</h2>
+  <form class="filter-drop filter__form" action="#" method="post">
+    <ul class="filters">
+      {% for i in filters_section %}
+        <li class="filters__item">
+          <h3 class="title-s filters__item-title">{{ i.title }}</h3>
+          <ul class="filters__list">
+            {% for e in i.filters_list %}
+              <li class="filters__list-item {% if e.type === "switcher" %}switcher{% endif %}">
+                <input class="{% if e.type === "radio" %}custom-radio{% endif %}{% if e.type === "checkbox" %}custom-checkbox{% endif %}{% if e.type === "switcher" %}visually-hidden{% endif %}" type="{% if e.type === "radio" %}radio{% endif %}{% if e.type === "checkbox" %}checkbox{% endif %}{% if e.type === "switcher" %}checkbox{% endif %}" id="{{ e.filter_for }}" {% if e.type === "radio" %} value="{{ e.value }}" {% endif %} {% if e.type === "radio" %} name="{{ e.name }}" {% endif %} {% if e.type === "switcher" %} name="{{ e.name }}" {% endif %} {% if e.checked === "checked" %} checked {% endif %}>
+                <label class="filters__label" for="{{ e.filter_for }}">
+                  {{ e.parameter }}
+                </label>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="range">
+      <label class="title-s range__label" for="slider-1">Price</label>
+      <div class="range__container">
+        <div class="slider-track"></div>
+        <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+        <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+      </div>
+      <div class="values">
+        <p class="values-text">&euro;<span id="range1">0</span></p>
+        <p class="values-text">&euro;<span id="range2">100</span></p>
+      </div>
+    </div>
+    <button
+      class="button button--secondary filter__button-reset"
+      type="reset"
+      id="reset-btn-catalog"
+      aria-labelledby="reset-btn-catalog">
+      <svg width="24" height="24" aria-hidden="true">
+        <use href="img/sprite.svg#x-close"></use>
+      </svg>
+      Clear all filters
+    </button>
+    <button class="button filter__button-submit" type="submit" id="submit-btn-catalog" aria-labelledby="submit-btn-catalog">
+      Save
+    </button>
+  </form>
+</section>

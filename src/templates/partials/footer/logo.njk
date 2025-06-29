@@ -1,0 +1,13 @@
+{% if title === "Pixmart" %}
+  <div class="logo footer__logo">
+    <svg class="footer__logo-icon" aria-label="Pixmart logo">
+      <use href="/img/sprite.svg#logo-footer"></use>
+    </svg>
+  </div>
+{% else %}
+  <a class="logo footer__logo" href="./index.html" aria-labelledby="nav-about">
+    <svg class="footer__logo-icon" aria-label="Pixmart logo">
+      <use href="/img/sprite.svg#logo-footer"></use>
+    </svg>
+  </a>
+{% endif %}

@@ -1,0 +1,70 @@
+<section class="contacts-form-section">
+  <h2 class="visually-hidden">contacts form</h2>
+    <form class="contacts-form">
+      <div class="contacts-form__item">
+        <label class="contacts-form__label" for="full-name">Full Name</label>
+        <input
+          class="input"
+          id="full-name"
+          type="text"
+          name="full-name"
+          minlength="3"
+          placeholder="Amelia Robert Johnson"
+          required>
+      </div>
+      <div class="contacts-form__item">
+        <label class="contacts-form__label" for="email">Email Address</label>
+        <input
+          class="input"
+          id="email"
+          type="email"
+          name="user-email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          required
+          placeholder="amelia.robertjohnson@pixmart.com">
+      </div>
+      <div class="contacts-form__item">
+        <label class="contacts-form__label" for="subject-select">Subject</label>
+        <select class="contacts-form__select" id="subject-select">
+          <option value="" disabled="disabled" selected="selected">General Inquiry</option>
+          <option value="newest">If you can dream it, you can do it</option>
+          <option value="most-popular">Just do it</option>
+          <option value="increasing-in-price">Keep pushing forward</option>
+          <option value="lowering-the-price">Never give up</option>
+        </select>
+      </div>
+      <div class="contacts-form__item contacts-form__item--textarea">
+        <label class="contacts-form__label" for="message">Message</label>
+        <textarea
+          class="input contacts-form__textarea"
+          name="welcome"
+          id="message"
+          cols="30"
+          rows="8"
+          required
+          placeholder="Enter your message ..."></textarea>
+      </div>
+      <div class="contacts-form__tools">
+        <div class="contacts-form__checkboxes">
+          <div class="contacts-form__checkbox">
+            <input class="custom-checkbox" type="checkbox" id="newsletter-checkbox">
+            <label for="newsletter-checkbox">
+              Subscribe me to Newsletter
+            </label>
+          </div>
+          <div class="contacts-form__checkbox">
+            <input class="custom-checkbox" type="checkbox" id="terms-checkbox">
+            <label for="terms-checkbox">
+              I have read the
+            </label>
+            <a class="hover-underline contacts-form__link" href="#" id="terms-link-checkbox" aria-labelledby="terms-link-checkbox">
+              User & Privacy Policy
+            </a>
+          </div>
+        </div>
+        <button class="button" title="Form submit button" type="submit" id="submit-btn" aria-labelledby="submit-btn">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </section>
